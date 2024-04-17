@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 	// gsap code here!
 
+	gsap.registerPlugin(ScrollTrigger);
+
 	const textElements = gsap.utils.toArray('.text');
 
 	textElements.forEach((text) => {
