@@ -80,8 +80,84 @@ nav ul li a:hover {
 
 /* INTRO SECTION */
 
+.intro {
+	position: relative;
+}
+
 .intro-div img {
 	width: 100%;
 	height: 670px;
 	object-fit: cover;
+	filter: brightness(85%);
+}
+
+.intro h2 {
+	font-size: 3.8rem;
+	font-weight: 900;
+	width: 45%;
+	color: #fff;
+
+	line-height: 4.3rem;
+
+	position: absolute;
+	top: 50%;
+	right: 2%;
+}
+
+/* ABOUT SECTION */
+
+.about {
+	padding-left: 10rem;
+	padding-right: 10rem;
+}
+
+.about-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	height: 85vh;
+}
+
+.text {
+	font-size: 7vw;
+	letter-spacing: 0.2em;
+	line-height: 100%;
+	margin: 0;
+
+	width: 100%;
+	color: rgb(182, 182, 182);
+	background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-size: 0%;
+	transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+
+	border-bottom: 1px solid #2f2b28;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	position: relative;
+}
+
+.about-div span {
+	position: absolute;
+	width: 80%;
+	height: 1%;
+	background-color: #4246ce;
+	color: #0d0d0d;
+
+	clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+	transform-origin: center;
+	transition: all cubic-bezier(0.1, 0.5, 0.5, 1) 0.4s;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.text:hover > span {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
