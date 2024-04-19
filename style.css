@@ -89,6 +89,7 @@ nav ul li a:hover {
 	height: 670px;
 	object-fit: cover;
 	filter: brightness(85%);
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
 }
 
 .intro h2 {
@@ -106,17 +107,18 @@ nav ul li a:hover {
 
 /* ABOUT SECTION */
 
-.about {
-	padding-left: 10rem;
-	padding-right: 10rem;
-}
+/* .about {
+	background: linear-gradient(137deg, #111214 4.87%, #0c0d0f 75.88%);
+} */
 
-.about-div {
+.about-div1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	height: 85vh;
+	height: 90vh;
+	margin-left: 10rem;
+	margin-right: 15rem;
 }
 
 .text {
@@ -126,8 +128,8 @@ nav ul li a:hover {
 	margin: 0;
 
 	width: 100%;
-	color: rgb(182, 182, 182);
-	background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+	color: rgb(35, 31, 32, 0.3);
+	background: linear-gradient(to right, #b6b6b6, #231f20) no-repeat;
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-size: 0%;
@@ -142,11 +144,11 @@ nav ul li a:hover {
 	position: relative;
 }
 
-.about-div span {
+.about-div1 span {
 	position: absolute;
-	width: 80%;
-	height: 1%;
-	background-color: #4246ce;
+	width: 100%;
+	height: 100%;
+	background-color: #d14905;
 	color: #0d0d0d;
 
 	clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
@@ -161,3 +163,237 @@ nav ul li a:hover {
 .text:hover > span {
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
+
+.about-div2 {
+	display: grid;
+	place-items: center;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 0 0.1rem;
+	margin-bottom: 7rem;
+}
+
+.about-div2 img {
+	width: 425px;
+	height: 425px;
+	object-fit: cover;
+	filter: brightness(90%);
+	border-radius: 3px;
+	transition: transform 0.5s ease-in-out; /* Smooth transition */
+	transform-origin: center center; /* Ensures the zoom effect is centered */
+}
+
+.about-div2 img:hover {
+	transform: scale(1.05); /* Zoom out by 20% */
+	cursor: pointer;
+}
+
+.about-div3 {
+	padding: 4rem 8rem;
+	height: 85vh;
+	background: linear-gradient(137deg, #111214 4.87%, #0c0d0f 75.88%);
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.about-div3 h2 {
+	font-size: 2.7rem;
+	font-weight: 700;
+	margin-bottom: 3rem;
+	color: #ffffff;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.div3-inner-div {
+	display: grid;
+	grid-template-columns: 0.5fr 1.5fr;
+	column-gap: 3rem;
+}
+
+.div3-inner-div img {
+	width: 440px;
+	height: 470px;
+	filter: brightness(90%);
+	border-radius: 3px;
+}
+
+.our-story {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.our-story h3,
+.our-story p {
+	text-align: start;
+	color: #ffffff;
+}
+
+.our-story h3,
+.inspire-msg {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 0.8rem;
+}
+
+.our-story p {
+	font-size: 1.2rem;
+	margin-bottom: 0.7rem;
+	color: #b4b4b4;
+}
+
+.our-story p span {
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.inspire-msg {
+	display: flex;
+	justify-content: center;
+	margin-top: 4rem;
+	font-weight: 500;
+	color: #ffffff;
+}
+/* END OF ABOUT SECTION CSS */
+
+/* FAQs SECTION */
+.faqs-section {
+	padding-top: 4rem;
+}
+
+/* FAQS QUESTIONS */
+.faqs-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 69vh;
+
+	width: 50%;
+	margin: 0 auto;
+}
+
+.faqs-title {
+	margin: 0.5rem 0;
+	font-size: 2.5rem;
+	font-family: 'Bebas Neue', Helvetica, sans-serif;
+}
+
+.faq {
+	max-width: 850px;
+	margin-top: 2rem;
+	padding-bottom: 0.4rem;
+	cursor: pointer;
+	border-bottom: 2px solid #000000;
+}
+
+.question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.question h3 {
+	font-size: 1.6rem;
+	font-family: 'Bebas Neue', Helvetica, sans-serif;
+}
+
+.answer {
+	padding-bottom: 5px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1.2s ease;
+}
+
+.answer p {
+	padding-top: 1rem;
+	line-height: 1.2rem;
+	font-size: 1.3rem;
+}
+
+.faq.active .answer {
+	max-height: 300px;
+	animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+	transform: rotate(180deg);
+}
+
+svg {
+	transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* END OF FAQs SECTION */
+
+/* FOOTER SECTION CSS */
+
+footer {
+	height: 35vh;
+	background-color: #000000;
+	padding-top: 2rem;
+}
+
+.footer-main-div {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+.footer-main-div img {
+	width: 250px;
+	height: 250px;
+	margin-left: 12rem;
+}
+
+.footer-links {
+	display: grid;
+	grid-template-columns: 1fr 0.8fr;
+}
+
+.footer-links a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.footer-links a:hover {
+	color: #b4b4b4;
+}
+
+.footer-links ul {
+	list-style: none;
+	margin-bottom: 1rem;
+}
+
+.footer-list {
+	display: grid;
+	grid-template-columns: 0.7fr 1fr;
+}
+
+.footer-list li {
+	margin-bottom: 0.5rem;
+}
+
+.social-links {
+	margin-top: 1.5rem;
+}
+
+.social-links svg {
+	margin-right: 1rem;
+}
+
+/* END OF FOOTER CSS */
