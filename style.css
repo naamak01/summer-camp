@@ -198,6 +198,7 @@ nav ul li a:hover {
 	font-size: 2.7rem;
 	font-weight: 700;
 	margin-bottom: 3rem;
+	margin-right: 24rem;
 	color: #ffffff;
 
 	display: flex;
@@ -397,3 +398,97 @@ footer {
 }
 
 /* END OF FOOTER CSS */
+
+/* END OF CSS FOR MAIN PAGE INDEX HTML */
+
+/* ANIMATION FOR FADE IN SCROLLER*/
+.animating-container {
+	position: relative;
+	opacity: 0;
+	transition: opacity 500ms ease-out 100ms;
+}
+
+.animating-container.appear {
+	opacity: 1;
+}
+/* END OF ANIMATION CSS FOR FADE IN SCROLL */
+
+/* START OF DIRECTORY CSS */
+
+.coaches-intro {
+	height: 83vh;
+}
+
+.coaches-intro-div img {
+	object-fit: cover;
+	filter: brightness(80%);
+}
+
+.coaches-intro p {
+	display: flex;
+	justify-content: flex-start;
+
+	font-size: 1.2rem;
+	font-weight: 600;
+
+	margin: 0 7rem;
+
+	margin-bottom: 5rem;
+	margin-top: 2rem;
+}
+
+.coaches {
+	margin-top: 6rem;
+	color: #000000;
+}
+
+.coaches h2 {
+	font-size: 2.4rem;
+	font-weight: 800;
+	margin-bottom: 3rem;
+	margin-left: 4rem;
+}
+
+.coaches-info-div {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+.individual-coach-bio-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 4rem;
+}
+
+.coach-image img {
+	width: 315px;
+	height: 315px;
+	object-fit: cover;
+	border-radius: 50%;
+	filter: brightness(85%);
+	transition: transform 0.5s ease-in-out; /* Smooth transition */
+	transform-origin: center center; /* Ensures the zoom effect is centered */
+}
+
+.coach-image img:hover {
+	transform: scale(1.05); /* Zoom out by 20% */
+	cursor: pointer;
+}
+
+.individual-coach-bio-div h3 {
+	font-size: 23px;
+	font-weight: 900;
+	margin-top: 18px;
+	word-spacing: -2px;
+}
+
+.individual-coach-bio-div h4 {
+	font-size: 15px;
+	font-weight: 600;
+	margin-top: 5px;
+	font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+}

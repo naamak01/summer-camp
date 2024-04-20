@@ -14,24 +14,5 @@
 	"dependencies": {
 		"gsap": "^3.12.5",
 		"i": "^0.3.7"
-	},
-	"my-lib": {
-		"name": "my-lib",
-		"type": "module",
-		"files": [
-			"dist"
-		],
-		"main": "./dist/my-lib.cjs",
-		"module": "./dist/my-lib.js",
-		"exports": {
-			".": {
-				"import": "./dist/my-lib.js",
-				"require": "./dist/my-lib.cjs"
-			},
-			"./secondary": {
-				"import": "./dist/secondary.js",
-				"require": "./dist/secondary.cjs"
-			}
-		}
 	}
 }

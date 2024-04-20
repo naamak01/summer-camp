@@ -1,0 +1,18 @@
+/* :root {
+	font-family: 'source-sans-pro', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: #231f20;
+	background-color: #000000;
+
+	color-scheme: light dark;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+} */
+.coaches-intro-div img {
+	object-fit: fill;
+}
