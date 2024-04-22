@@ -1,0 +1,222 @@
+:root {
+	font-family: 'source-sans-pro', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: #231f20;
+	background-color: #ffffff;
+
+	color-scheme: light dark;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* TARGETING THE WHOLE PAGE WITH THIS PROPERTIES AND VALUES */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* MAIN*/
+
+/* INTRO SECTION */
+.sports-intro {
+	position: relative;
+}
+
+.sport-intro-div img {
+	width: 100%;
+	height: 670px;
+	object-fit: cover;
+	filter: brightness(85%);
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.sports-intro h2 {
+	font-size: 3.8rem;
+	font-weight: 900;
+	width: 45%;
+	color: #ffffff;
+
+	line-height: 4.3rem;
+
+	position: absolute;
+	top: 70%;
+	left: 2%;
+}
+
+.sports-intro-message {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 54vh;
+	margin-top: 6rem;
+	margin-left: 7rem;
+	margin-right: 11rem;
+}
+
+.sports-intro-message h2 {
+	font-size: 2.5rem;
+	font-weight: 800;
+	word-spacing: -2px;
+	margin-bottom: 1.5rem;
+}
+
+.sports-intro-message p {
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+/* END OF INTRO SECTION AND DIV */
+
+/* ABOUT OUR SPORTS MESSAGE SECTION*/
+.soccer-main-div {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: last baseline;
+	margin-bottom: 1rem;
+	margin-top: 3rem;
+	margin-right: 6rem;
+	margin-left: 5rem;
+}
+
+.soccer-main-div img {
+	width: 850px;
+	height: 680px;
+	object-fit: cover;
+	filter: brightness(80%);
+	border-radius: 2px;
+	padding-left: 2rem;
+}
+
+.soccer-main-div h2 {
+	font-size: 5.3rem;
+	font-weight: 800;
+	color: #b3643c;
+}
+
+.soccer-main-div h3 {
+	font-size: 2.5rem;
+	font-weight: 800;
+	word-spacing: -6px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 4rem;
+	margin-top: -30px;
+}
+
+.soccer-main-div h3 ::after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	border-top: 10px solid #000000; /* Set the color and thickness of the border */
+	bottom: -60px; /* Adjust the position of the border */
+	height: 10px; /* Adjust the thickness of the border */
+	left: 21%;
+	width: 10%; /* Adjust this to control the width of the border */
+}
+
+.soccer-inner-div {
+	margin-left: 4rem;
+	margin-right: 7rem;
+	margin-bottom: 5rem;
+}
+
+.soccer-main-div p {
+	font-size: 1.2rem;
+	margin-left: 7rem;
+	margin-top: 1rem;
+	line-height: 2rem;
+}
+
+.basketball-main-div {
+	margin-right: 0;
+}
+
+.basketball-text-div {
+	margin-right: 0;
+	margin-left: 5rem;
+}
+
+.soccer-inner-div .team-build {
+	margin-left: 4.4rem;
+}
+
+/* BEGINNING OF IMAGE SLIDER SECTION*/
+
+.image-carousel {
+	min-height: 68vh;
+	display: grid;
+	place-items: center;
+	margin-bottom: 2rem;
+}
+
+.slider {
+	position: relative;
+	margin: auto;
+	width: 94%;
+	height: 500px;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+
+.slider-tracker {
+	display: flex;
+	width: calc(450px * 14);
+	animation: scroll 90s linear infinite;
+}
+
+.slider-tracker:hover {
+	animation-play-state: paused;
+}
+
+.slide {
+	display: flex;
+	align-items: center;
+	padding: 1.5rem;
+	perspective: 120px;
+}
+
+.slide img {
+	filter: brightness(80%);
+	object-fit: cover;
+	border-radius: 5px;
+	width: 450px;
+	height: 450px;
+
+	transition: transform 1s;
+}
+
+.slide img:hover {
+	transform: translateZ(15px);
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-437px * 12));
+	}
+}
+
+.team-build span {
+	font-weight: 600;
+}
+
+.wellbeing-inner-div h3 span::after {
+	left: 11%;
+}
+
+/* END OF IMAGE SLIDER*/

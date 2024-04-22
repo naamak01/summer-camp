@@ -123,7 +123,7 @@ nav ul li a:hover {
 
 .text {
 	font-size: 7vw;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.15em;
 	line-height: 100%;
 	margin: 0;
 
@@ -173,8 +173,8 @@ nav ul li a:hover {
 }
 
 .about-div2 img {
-	width: 425px;
-	height: 425px;
+	width: 440px;
+	height: 470px;
 	object-fit: cover;
 	filter: brightness(90%);
 	border-radius: 3px;
@@ -189,7 +189,7 @@ nav ul li a:hover {
 
 .about-div3 {
 	padding: 4rem 8rem;
-	height: 85vh;
+	height: 87vh;
 	background: linear-gradient(137deg, #111214 4.87%, #0c0d0f 75.88%);
 	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
 }
@@ -233,7 +233,7 @@ nav ul li a:hover {
 
 .our-story h3,
 .inspire-msg {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight: 700;
 	margin-bottom: 0.8rem;
 }
@@ -268,7 +268,7 @@ nav ul li a:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-height: 69vh;
+	min-height: 82vh;
 
 	width: 50%;
 	margin: 0 auto;
@@ -309,7 +309,7 @@ nav ul li a:hover {
 
 .answer p {
 	padding-top: 1rem;
-	line-height: 1.2rem;
+	line-height: 1.5rem;
 	font-size: 1.3rem;
 }
 
@@ -412,83 +412,3 @@ footer {
 	opacity: 1;
 }
 /* END OF ANIMATION CSS FOR FADE IN SCROLL */
-
-/* START OF DIRECTORY CSS */
-
-.coaches-intro {
-	height: 83vh;
-}
-
-.coaches-intro-div img {
-	object-fit: cover;
-	filter: brightness(80%);
-}
-
-.coaches-intro p {
-	display: flex;
-	justify-content: flex-start;
-
-	font-size: 1.2rem;
-	font-weight: 600;
-
-	margin: 0 7rem;
-
-	margin-bottom: 5rem;
-	margin-top: 2rem;
-}
-
-.coaches {
-	margin-top: 6rem;
-	color: #000000;
-}
-
-.coaches h2 {
-	font-size: 2.4rem;
-	font-weight: 800;
-	margin-bottom: 3rem;
-	margin-left: 4rem;
-}
-
-.coaches-info-div {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	padding-left: 5rem;
-	padding-right: 5rem;
-}
-
-.individual-coach-bio-div {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 4rem;
-}
-
-.coach-image img {
-	width: 315px;
-	height: 315px;
-	object-fit: cover;
-	border-radius: 50%;
-	filter: brightness(85%);
-	transition: transform 0.5s ease-in-out; /* Smooth transition */
-	transform-origin: center center; /* Ensures the zoom effect is centered */
-}
-
-.coach-image img:hover {
-	transform: scale(1.05); /* Zoom out by 20% */
-	cursor: pointer;
-}
-
-.individual-coach-bio-div h3 {
-	font-size: 23px;
-	font-weight: 900;
-	margin-top: 18px;
-	word-spacing: -2px;
-}
-
-.individual-coach-bio-div h4 {
-	font-size: 15px;
-	font-weight: 600;
-	margin-top: 5px;
-	font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
-}

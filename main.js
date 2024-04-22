@@ -1,4 +1,4 @@
-import './src/Directory/directory.css';
+import './directory.css';
 import './style.css';
 
 // Targeting animals for picture scrolling (Fade-in)
