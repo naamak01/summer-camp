@@ -1,0 +1,171 @@
+:root {
+	font-family: 'source-sans-pro', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	/* color: #231f20; */
+	background-color: #ffffff;
+
+	color-scheme: light dark;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* TARGETING THE WHOLE PAGE WITH THIS PROPERTIES AND VALUES */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* INTRO SECTION */
+.calendar-intro {
+	position: relative;
+}
+
+.calendar-intro-div img {
+	width: 100%;
+	height: 670px;
+	object-fit: cover;
+	filter: brightness(85%);
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.calendar-intro h2 {
+	font-size: 3.8rem;
+	font-weight: 900;
+	width: 35%;
+	color: #ffffff;
+
+	line-height: 4.3rem;
+
+	position: absolute;
+	bottom: 20%;
+	right: 1%;
+}
+/* END OF INTRO CALENDAR SECTION */
+
+/* MAIN CALENDAR SECTION */
+
+.main-calendar-container {
+	margin-left: 25rem;
+	margin-right: 25rem;
+	margin-top: 3rem;
+}
+
+.calendar-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15vh;
+	margin-bottom: 3rem;
+	gap: 2rem;
+}
+
+#calender-btn-1,
+#calender-btn-2 {
+	padding: 1.4rem 5rem;
+	background-color: #000000;
+	color: #f7f7f7;
+	font-size: 1.5rem;
+	font-weight: 600;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+}
+
+#calender-btn-1.active,
+#calender-btn-2.active {
+	background-color: #000000;
+	color: #f7f7f7;
+	border: none;
+}
+
+#calender-btn-1.inactive,
+#calender-btn-2.inactive {
+	background-color: #335d65;
+	color: #f7f7f7;
+	border: none;
+}
+
+.june-calendar,
+.july-calendar {
+	transition: opacity 0.5s ease-in-out;
+	opacity: 0;
+	display: none;
+}
+
+.june-calendar.active,
+.july-calendar.active {
+	opacity: 1;
+	display: block;
+}
+
+.women-calendar,
+.men-calendar {
+	margin-bottom: 4rem;
+}
+
+.women-calendar h2,
+.men-calendar h2 {
+	font-size: 1.6rem;
+	font-weight: 800;
+	color: #000000;
+	margin-bottom: 2rem;
+}
+
+.event-div {
+	margin-bottom: 2rem;
+	display: grid;
+	grid-template-columns: 0.5fr 1.5fr;
+	justify-content: center;
+	align-items: center;
+	column-gap: 2rem;
+}
+
+.time span {
+	padding: 1.1rem 2.4rem;
+	background-color: #000000;
+	color: #f7f7f7;
+	font-size: 1.5rem;
+	font-weight: 600;
+	width: 240px;
+	display: inline-block;
+	/* overflow: hidden; */
+}
+
+.event h3 {
+	padding: 1.1rem 3rem;
+	background-color: #b3643c;
+	color: #f7f7f7;
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+.location-div {
+	height: 60vh;
+	padding-top: 2rem;
+	margin-bottom: 3rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.location-div h2 {
+	font-weight: 700;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+iframe {
+	width: 1100px;
+	height: 430px;
+}

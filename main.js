@@ -32,12 +32,3 @@ faders.forEach((fader) => {
 
 // // Function to scroll to top when arrow is clicked
 // const btnScrollToTop = document.querySelector('#btnScrollToTop');
-
-// btnScrollToTop.addEventListener('click', function () {
-// 	// Scroll to the top of the page smoothly
-// 	window.scrollTo({
-// 		top: 0,
-// 		left: 0,
-// 		behavior: 'smooth',
-// 	});
-// });

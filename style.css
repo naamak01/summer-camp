@@ -372,7 +372,7 @@ footer {
 }
 
 .footer-links a:hover {
-	color: #b4b4b4;
+	color: #b3643c;
 }
 
 .footer-links ul {
@@ -401,7 +401,7 @@ footer {
 
 /* END OF CSS FOR MAIN PAGE INDEX HTML */
 
-/* ANIMATION FOR FADE IN SCROLLER*/
+/* ANIMATION FOR FADE IN SCROLL*/
 .animating-container {
 	position: relative;
 	opacity: 0;

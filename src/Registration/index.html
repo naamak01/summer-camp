@@ -25,6 +25,8 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
 			rel="stylesheet"
 		/>
+
+		<link rel="stylesheet" href="/register.css" />
 		<title>Registration</title>
 	</head>
 	<body>
@@ -50,6 +52,139 @@
 			<!-- END OF NAV BAR -->
 		</header>
 		<!-- END OF HEADER -->
+
+		<!-- BEGINING OF MAIN -->
+
+		<div class="registration">
+			<div class="register-header">
+				<h1><span>REGISTER</span></h1>
+				<p>
+					Note: One Time Registration fee of $120.00 before Admission on
+					Arrival.
+				</p>
+			</div>
+
+			<div class="forms-container">
+				<form action="" method="post" id="registration-form">
+					<!-- STUDENT OR ATTENDANT INFO -->
+
+					<div class="input-group user-info">
+						<label for="firstname"></label>
+						<input
+							type="text"
+							id="firstname"
+							name="firstname"
+							placeholder="FIRST NAME*"
+							required
+						/>
+
+						<label for="lastname"></label>
+						<input
+							type="text"
+							id="lastname"
+							name="lastname"
+							placeholder="LAST NAME*"
+							required
+						/>
+					</div>
+
+					<div class="input-group email-section">
+						<label for="firstname"></label>
+						<input
+							type="email"
+							id="useremail"
+							name="useremail"
+							placeholder="EMAIL ADDRESS*"
+							required
+						/>
+					</div>
+
+					<div class="input-group allergy-section">
+						<label for="allergies"></label>
+						<textarea
+							placeholder="SPECIAL ACCOMDATIONS (Allergies, etc...)"
+						></textarea>
+					</div>
+
+					<!-- EMERGENCY CONTACT -->
+					<div class="emergency-container">
+						<div class="input-group emergency emergency-1">
+							<label for="emergency-firstname"></label>
+							<input
+								type="text"
+								id="emergency-firstname"
+								name="emergency-firstname"
+								placeholder="EMERGENCY CONTACT FIRST-NAME*"
+								required
+							/>
+
+							<label for="emergency-lastname"></label>
+							<input
+								type="text"
+								id="emergency-lastname"
+								name="emergency-lastname"
+								placeholder="EMERGENCY CONTACT LAST-NAME*"
+								required
+							/>
+						</div>
+
+						<div class="input-group emergency emergency-2">
+							<label for="emergency-number"></label>
+							<input
+								type="tel"
+								id="emergency-number"
+								name="emergency-number"
+								placeholder="EMERGENCY CONTACT PHONE # *"
+								pattern="[+]{1}[0-9]{11,14}"
+								required
+							/>
+
+							<label for="emergency-relation"></label>
+							<input
+								type="text"
+								id="emergency-relation"
+								name="emergency-relation"
+								placeholder="EMERGENCY CONTACT RELATION*"
+								required
+							/>
+						</div>
+					</div>
+					<!-- EMERGENCY CONTACT ENDS-->
+
+					<div class="preferences">
+						<h3>SPORTS PREFERENCES</h3>
+						<h5>Select all that apply</h5>
+					</div>
+
+					<div class="checkbox-main">
+						<div class="checkbox-1">
+							<input type="checkbox" id="check-soccer" name="check-soccer" />
+							<label for="emergency-number">Soccer</label>
+						</div>
+
+						<div class="checkbox-2">
+							<input
+								type="checkbox"
+								id="check-basketball"
+								name="check-basketball"
+							/>
+							<label for="check-basketball">Baketball</label>
+						</div>
+					</div>
+
+					<div class="checkbox-3">
+						<input type="checkbox" id="check-age" name="check-age" required />
+						<label for="check-age">I am 15 year or older*</label>
+					</div>
+
+					<div class="checkbox-4">
+						<button type="submit">REGISTER</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- END OF MAIN -->
 
 		<!-- BEGINNING OF FOOTER -->
 		<footer>
