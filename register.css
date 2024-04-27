@@ -30,7 +30,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 5rem;
+	margin-top: 3rem;
 }
 
 .register-header {
@@ -38,7 +38,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 }
 
 .register-header h1 {
@@ -55,6 +55,27 @@ html {
 
 .forms-container {
 	width: 746px;
+}
+
+/* For alert when form is submitted */
+.alert {
+	width: 100%;
+	color: #000000;
+	background-color: rgb(4, 193, 92);
+	text-align: center;
+	padding: 15px 20px;
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+	display: none;
+	transition: opacity 0.5s ease-in-out;
+	opacity: 0;
+}
+
+.alert.active {
+	opacity: 1;
+	display: block;
 }
 
 .user-info {
@@ -106,13 +127,22 @@ html {
 .user-info input::placeholder,
 .email-section input::placeholder,
 .emergency input::placeholder {
-	padding-left: 1rem;
+	padding-left: 0;
 }
 
 textarea::placeholder {
 	color: #777676;
 	font-size: 1rem;
 	padding-left: 10px;
+}
+
+.user-info input[type='text'],
+.email-section input[type='email'],
+.emergency input[type='text'],
+.input-group textarea,
+.emergency input[type='tel'] {
+	color: #000000;
+	padding-left: 2rem;
 }
 
 .user-info input[type='text']:focus,
@@ -138,26 +168,33 @@ textarea::placeholder {
 	font-weight: 300;
 }
 
-.checkbox-main {
+.radio-main {
 	display: flex;
 	gap: 19rem;
 	margin-bottom: 2rem;
 }
 
-.checkbox-2,
-.checkbox-1,
+.radio1,
+.radio2,
 .checkbox-3 {
 	display: flex;
 	gap: 1rem;
 }
 
-.checkbox-2 input,
-.checkbox-1 input,
+.radio2 input,
+.radio1 input {
+	height: 30px;
+	width: 30px;
+}
+
 .checkbox-3 input {
 	height: 20px;
 	width: 20px;
 }
 
+input[type='radio'] {
+	cursor: pointer;
+}
 input[type='checkbox'] {
 	cursor: pointer;
 }
@@ -166,15 +203,15 @@ input[type='checkbox'] {
 	margin-bottom: 2rem;
 }
 
-.checkbox-4 {
+.submit-btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 15vh;
-	margin-bottom: 2rem;
+	height: 12vh;
+	margin-bottom: 1rem;
 }
 
-.checkbox-4 button {
+.submit-btn button {
 	padding: 20px 60px;
 	cursor: pointer;
 	border: 1px solid #000000;
@@ -184,9 +221,9 @@ input[type='checkbox'] {
 	font-weight: 600;
 }
 
-.checkbox-4 button:hover {
+.submit-btn button:hover {
 	background-color: #b3643c;
 	color: #ffffff;
-	font-weight: 600;
+	font-weight: 900;
 	border: none;
 }
