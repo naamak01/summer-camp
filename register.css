@@ -75,7 +75,6 @@ html {
 
 .alert.active {
 	opacity: 1;
-	display: block;
 }
 
 .user-info {

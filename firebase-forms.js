@@ -38,7 +38,7 @@ function submitForm(e) {
 	let emrgencyLastname = getElementVal('emergency-lastname');
 	let emrgencyNumber = getElementVal('emergency-number');
 	let emrgencyRelationship = getElementVal('emergency-relation');
-	let sportsRadioBtn = document.getElementById('check-soccer').checked
+	let sportsRadioBtn = document.getElementById('radio-soccer').checked
 		? 'Soccer'
 		: 'Basketball';
 	let ageCheckbox = getElementVal('check-age');
