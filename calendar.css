@@ -3,7 +3,7 @@
 	font-weight: 400;
 
 	color-scheme: light dark;
-	/* color: #231f20; */
+	color: #231f20;
 	background-color: #ffffff;
 
 	color-scheme: light dark;
@@ -24,6 +24,59 @@
 html {
 	scroll-behavior: smooth;
 }
+
+/* CSS FOR THE NAVIGATION BAR */
+nav {
+	padding: 0 20px;
+	background-color: #000000;
+	color: #fff;
+	font-family: 'Bebas Neue', Helvetica, sans-serif;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+	/* position: relative; */
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+nav img {
+	width: 120px;
+	height: 100px;
+	margin-left: 8rem;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 8rem;
+}
+
+nav ul li {
+	list-style: none;
+	text-decoration: none;
+	margin-right: 1.3rem;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 600;
+	padding: 0 3px;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+	text-underline-offset: 1.8rem;
+	text-decoration-color: #fff;
+}
+
+/* END OF NAV */
 
 /* INTRO SECTION */
 .calendar-intro {
@@ -168,4 +221,1053 @@ html {
 iframe {
 	width: 1100px;
 	height: 430px;
+}
+
+/* MEDIA QUERIES BEGIN */
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 1409PX */
+
+@media (max-width: 1409px) {
+	.calendar-intro-div img {
+		width: 100%;
+		height: 450px;
+		object-fit: cover;
+	}
+
+	.calendar-intro h2 {
+		font-size: 3.3rem;
+		font-weight: 900;
+		width: 45%;
+		color: #ffffff;
+
+		line-height: 4.3rem;
+
+		position: absolute;
+		bottom: 10%;
+		right: 2%;
+		padding-right: 0;
+	}
+
+	/* MAIN CALENDAR SECTION */
+
+	.main-calendar-container {
+		margin-left: 7rem;
+		margin-right: 7rem;
+		margin-top: 2rem;
+	}
+
+	.calendar-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 15vh;
+		margin-bottom: 1rem;
+		gap: 1.3rem;
+	}
+
+	#calender-btn-1,
+	#calender-btn-2 {
+		padding: 1.4rem 3.3rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1.7rem;
+		font-weight: 600;
+		border-radius: 4px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.women-calendar,
+	.men-calendar {
+		margin-bottom: 2.5rem;
+	}
+
+	.women-calendar h2,
+	.men-calendar h2 {
+		font-size: 1.8rem;
+		font-weight: 800;
+		color: #000000;
+		margin-bottom: 2rem;
+	}
+
+	.event-div {
+		margin-bottom: 2rem;
+		display: grid;
+		grid-template-columns: 0.4fr 1.5fr;
+		justify-content: center;
+		align-items: center;
+		column-gap: 0.3rem;
+	}
+
+	.time span {
+		padding: 1.3rem 0.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1.3rem;
+		font-weight: 600;
+		width: 190px;
+		display: inline-block;
+		text-align: center;
+		/* overflow: hidden; */
+	}
+
+	.event h3 {
+		padding: 1.2rem 1rem;
+		background-color: #b3643c;
+		color: #f7f7f7;
+		font-size: 1.3rem;
+		font-weight: 600;
+	}
+
+	.location-div {
+		height: 60vh;
+		padding-top: 2rem;
+		margin-bottom: 3rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.location-div h2 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	iframe {
+		width: 800px;
+		height: 450px;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 1200PX */
+
+@media (max-width: 1250px) {
+	.calendar-intro-div img {
+		width: 100%;
+		height: 450px;
+		object-fit: cover;
+	}
+
+	.calendar-intro h2 {
+		font-size: 3rem;
+		font-weight: 900;
+		width: 50%;
+		color: #ffffff;
+
+		line-height: 4.3rem;
+
+		position: absolute;
+		bottom: 10%;
+		right: 2%;
+		padding-right: 0;
+	}
+
+	/* MAIN CALENDAR SECTION */
+
+	.main-calendar-container {
+		margin-left: 7rem;
+		margin-right: 7rem;
+		margin-top: 2rem;
+	}
+
+	.calendar-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 15vh;
+		margin-bottom: 1rem;
+		gap: 1.3rem;
+	}
+
+	#calender-btn-1,
+	#calender-btn-2 {
+		padding: 1.4rem 3.3rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1.7rem;
+		font-weight: 600;
+		border-radius: 4px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.women-calendar,
+	.men-calendar {
+		margin-bottom: 2.5rem;
+	}
+
+	.women-calendar h2,
+	.men-calendar h2 {
+		font-size: 1.8rem;
+		font-weight: 800;
+		color: #000000;
+		margin-bottom: 2rem;
+	}
+
+	.event-div {
+		margin-bottom: 2rem;
+		display: grid;
+		grid-template-columns: 0.4fr 1.4fr;
+		justify-content: center;
+		align-items: center;
+		column-gap: 0.3rem;
+	}
+
+	.time span {
+		padding: 1.3rem 0.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1.3rem;
+		font-weight: 600;
+		width: 190px;
+		display: inline-block;
+		text-align: center;
+		/* overflow: hidden; */
+	}
+
+	.event h3 {
+		padding: 1.2rem 1rem;
+		background-color: #b3643c;
+		color: #f7f7f7;
+		font-size: 1.3rem;
+		font-weight: 600;
+	}
+
+	.location-div {
+		height: 50vh;
+		padding-top: 2rem;
+		margin-bottom: 3rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.location-div h2 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	iframe {
+		width: 730px;
+		height: 400px;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 990PX */
+
+@media (max-width: 990px) {
+	.calendar-intro-div img {
+		width: 100%;
+		height: 320px;
+		object-fit: cover;
+	}
+
+	.calendar-intro h2 {
+		font-size: 2.2rem;
+		font-weight: 900;
+		width: 40%;
+		color: #ffffff;
+
+		line-height: 4.3rem;
+
+		position: absolute;
+		bottom: 10%;
+		right: 2%;
+		padding-right: 0;
+	}
+
+	/* MAIN CALENDAR SECTION */
+
+	.main-calendar-container {
+		margin-left: 4rem;
+		margin-right: 4rem;
+		margin-top: 2rem;
+	}
+
+	.calendar-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 15vh;
+		margin-bottom: 1rem;
+		gap: 1.3rem;
+	}
+
+	#calender-btn-1,
+	#calender-btn-2 {
+		padding: 1.4rem 2.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1.4rem;
+		font-weight: 600;
+		border-radius: 4px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.women-calendar,
+	.men-calendar {
+		margin-bottom: 2.5rem;
+	}
+
+	.women-calendar h2,
+	.men-calendar h2 {
+		font-size: 1.3rem;
+		font-weight: 800;
+		color: #000000;
+		margin-bottom: 2rem;
+	}
+
+	.event-div {
+		margin-bottom: 2rem;
+		display: grid;
+		grid-template-columns: 0.6fr 1.4fr;
+		justify-content: center;
+		align-items: center;
+		column-gap: 0.3rem;
+	}
+
+	.time span {
+		padding: 1.3rem 0.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1rem;
+		font-weight: 600;
+		width: 190px;
+		display: inline-block;
+		text-align: center;
+		/* overflow: hidden; */
+	}
+
+	.event h3 {
+		padding: 1.2rem 1rem;
+		background-color: #b3643c;
+		color: #f7f7f7;
+		font-size: 1.1rem;
+		font-weight: 600;
+	}
+
+	.location-div {
+		height: 48vh;
+		padding-top: 2rem;
+		margin-bottom: 3rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.location-div h2 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	iframe {
+		width: 600px;
+		height: 340px;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 850PX */
+
+@media (max-width: 850px) {
+	.calendar-intro-div img {
+		width: 100%;
+		height: 320px;
+		object-fit: cover;
+	}
+
+	.calendar-intro h2 {
+		font-size: 1.9rem;
+		font-weight: 900;
+		width: 40%;
+		color: #ffffff;
+
+		line-height: 4.3rem;
+
+		position: absolute;
+		bottom: 10%;
+		right: 2%;
+		padding-right: 0;
+	}
+
+	/* MAIN CALENDAR SECTION */
+
+	.main-calendar-container {
+		margin-left: 3rem;
+		margin-right: 3rem;
+		margin-top: 2rem;
+	}
+
+	.calendar-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 15vh;
+		margin-bottom: 1rem;
+		gap: 1.3rem;
+	}
+
+	#calender-btn-1,
+	#calender-btn-2 {
+		padding: 1.4rem 2.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1.4rem;
+		font-weight: 600;
+		border-radius: 4px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.women-calendar,
+	.men-calendar {
+		margin-bottom: 2.5rem;
+	}
+
+	.women-calendar h2,
+	.men-calendar h2 {
+		font-size: 1.2rem;
+		font-weight: 800;
+		color: #000000;
+		margin-bottom: 2rem;
+	}
+
+	.event-div {
+		margin-bottom: 2rem;
+		display: grid;
+		grid-template-columns: 0.6fr 1.4fr;
+		justify-content: center;
+		align-items: center;
+		column-gap: 0.3rem;
+	}
+
+	.time span {
+		padding: 1.2rem 0.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1rem;
+		font-weight: 600;
+		width: 170px;
+		display: inline-block;
+		text-align: center;
+		/* overflow: hidden; */
+	}
+
+	.event h3 {
+		padding: 1.1rem 1rem;
+		background-color: #b3643c;
+		color: #f7f7f7;
+		font-size: 1.1rem;
+		font-weight: 600;
+	}
+
+	.location-div {
+		height: 45vh;
+		padding-top: 2rem;
+		margin-bottom: 3rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.location-div h2 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	iframe {
+		width: 500px;
+		height: 300px;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 750PX */
+
+@media (max-width: 750px) {
+	.calendar-intro-div img {
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+	}
+
+	.calendar-intro h2 {
+		font-size: 1.6rem;
+		font-weight: 900;
+		width: 40%;
+		color: #ffffff;
+
+		line-height: 4.3rem;
+
+		position: absolute;
+		bottom: 5%;
+		right: 2%;
+		padding-right: 0;
+	}
+
+	/* MAIN CALENDAR SECTION */
+
+	.main-calendar-container {
+		margin-left: 2.4rem;
+		margin-right: 2.4rem;
+		margin-top: 1rem;
+	}
+
+	.calendar-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 15vh;
+		margin-bottom: 1rem;
+		gap: 1.3rem;
+	}
+
+	#calender-btn-1,
+	#calender-btn-2 {
+		padding: 1.4rem 2.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1.4rem;
+		font-weight: 600;
+		border-radius: 4px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.women-calendar,
+	.men-calendar {
+		margin-bottom: 2.5rem;
+	}
+
+	.women-calendar h2,
+	.men-calendar h2 {
+		font-size: 1.2rem;
+		font-weight: 800;
+		color: #000000;
+		margin-bottom: 2rem;
+	}
+
+	.event-div {
+		margin-bottom: 2rem;
+		display: grid;
+		grid-template-columns: 0.6fr 1.4fr;
+		justify-content: center;
+		align-items: center;
+		column-gap: 0.3rem;
+	}
+
+	.time span {
+		padding: 1.1rem 0.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1rem;
+		font-weight: 600;
+		width: 170px;
+		display: inline-block;
+		text-align: center;
+		/* overflow: hidden; */
+	}
+
+	.event h3 {
+		padding: 1.1rem 1rem;
+		background-color: #b3643c;
+		color: #f7f7f7;
+		font-size: 1.1rem;
+		font-weight: 600;
+	}
+
+	.location-div {
+		height: 40vh;
+		padding-top: 2rem;
+		margin-bottom: 3rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.location-div h2 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	iframe {
+		width: 450px;
+		height: 260px;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 644px */
+
+@media (max-width: 644px) {
+	.calendar-intro-div img {
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+	}
+
+	.calendar-intro h2 {
+		font-size: 1.6rem;
+		font-weight: 900;
+		width: 55%;
+		color: #ffffff;
+
+		line-height: 4.3rem;
+
+		position: absolute;
+		bottom: 5%;
+		right: 2%;
+		padding-right: 0;
+	}
+
+	/* MAIN CALENDAR SECTION */
+
+	.main-calendar-container {
+		margin-left: 3rem;
+		margin-right: 3rem;
+		margin-top: 1rem;
+	}
+
+	.calendar-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 15vh;
+		margin-bottom: 1rem;
+		gap: 1.3rem;
+	}
+
+	#calender-btn-1,
+	#calender-btn-2 {
+		padding: 1.4rem 2.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1.2rem;
+		font-weight: 600;
+		border-radius: 4px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.women-calendar,
+	.men-calendar {
+		margin-bottom: 2.5rem;
+	}
+
+	.women-calendar h2,
+	.men-calendar h2 {
+		font-size: 1.2rem;
+		font-weight: 800;
+		color: #000000;
+		margin-bottom: 2rem;
+	}
+
+	.event-div {
+		margin-bottom: 2rem;
+		display: grid;
+		grid-template-columns: 0.6fr 1.4fr;
+		justify-content: center;
+		align-items: center;
+		column-gap: 0.5rem;
+	}
+
+	.time span {
+		padding: 1.1rem 0.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 0.9rem;
+		font-weight: 600;
+		width: 120px;
+		display: inline-block;
+		text-align: center;
+		/* overflow: hidden; */
+	}
+
+	.event h3 {
+		padding: 1.1rem 1rem;
+		background-color: #b3643c;
+		color: #f7f7f7;
+		font-size: 0.9rem;
+		font-weight: 600;
+	}
+
+	.location-div {
+		height: 37vh;
+		padding-top: 2rem;
+		margin-bottom: 3rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.location-div h2 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	iframe {
+		width: 400px;
+		height: 240px;
+	}
+}
+
+/* CSS FOR MAX WIDTH OF 560px */
+
+@media (max-width: 560px) {
+	.calendar-intro-div img {
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+	}
+
+	.calendar-intro h2 {
+		font-size: 1.6rem;
+		font-weight: 900;
+		width: 55%;
+		color: #ffffff;
+
+		line-height: 4.3rem;
+
+		position: absolute;
+		bottom: 5%;
+		right: 2%;
+		padding-right: 0;
+	}
+	/* END OF INTRO CALENDAR SECTION */
+
+	/* MAIN CALENDAR SECTION */
+
+	.main-calendar-container {
+		margin-left: 2rem;
+		margin-right: 2rem;
+		margin-top: 1rem;
+	}
+
+	.calendar-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 15vh;
+		margin-bottom: 1rem;
+		gap: 1.3rem;
+	}
+
+	#calender-btn-1,
+	#calender-btn-2 {
+		padding: 1.4rem 2.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1rem;
+		font-weight: 600;
+		border-radius: 4px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.women-calendar,
+	.men-calendar {
+		margin-bottom: 2.5rem;
+	}
+
+	.women-calendar h2,
+	.men-calendar h2 {
+		font-size: 1rem;
+		font-weight: 800;
+		color: #000000;
+		margin-bottom: 2rem;
+	}
+
+	.event-div {
+		margin-bottom: 2rem;
+		display: grid;
+		grid-template-columns: 0.6fr 1.4fr;
+		justify-content: center;
+		align-items: center;
+		column-gap: 0.8rem;
+	}
+
+	.time span {
+		padding: 1.1rem 0.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 0.8rem;
+		font-weight: 600;
+		width: 120px;
+		display: inline-block;
+		text-align: center;
+		/* overflow: hidden; */
+	}
+
+	.event h3 {
+		padding: 1.1rem 1rem;
+		background-color: #b3643c;
+		color: #f7f7f7;
+		font-size: 0.8rem;
+		font-weight: 600;
+	}
+
+	.location-div {
+		height: 35vh;
+		padding-top: 2rem;
+		margin-bottom: 3rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.location-div h2 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	iframe {
+		width: 380px;
+		height: 240px;
+	}
+}
+
+/* CSS FOR MAX WIDTH OF 465px */
+
+@media (max-width: 465px) {
+	.calendar-intro-div img {
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+	}
+
+	.calendar-intro h2 {
+		font-size: 1.4rem;
+		font-weight: 900;
+		width: 55%;
+		color: #ffffff;
+
+		line-height: 4.3rem;
+
+		position: absolute;
+		bottom: 5%;
+		right: 2%;
+		padding-right: 0;
+	}
+	/* END OF INTRO CALENDAR SECTION */
+
+	/* MAIN CALENDAR SECTION */
+
+	.main-calendar-container {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-top: 1rem;
+	}
+
+	.calendar-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 15vh;
+		margin-bottom: 1rem;
+		gap: 1rem;
+	}
+
+	#calender-btn-1,
+	#calender-btn-2 {
+		padding: 1.4rem 2.5rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1rem;
+		font-weight: 600;
+		border-radius: 4px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.women-calendar,
+	.men-calendar {
+		margin-bottom: 2.5rem;
+	}
+
+	.women-calendar h2,
+	.men-calendar h2 {
+		font-size: 1rem;
+		font-weight: 800;
+		color: #000000;
+		margin-bottom: 2rem;
+	}
+
+	.event-div {
+		margin-bottom: 2rem;
+		display: grid;
+		grid-template-columns: 0.5fr 1.5fr;
+		justify-content: center;
+		align-items: center;
+		column-gap: 1rem;
+	}
+
+	.time span {
+		padding: 1.1rem 0.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 0.7rem;
+		font-weight: 600;
+		width: 100px;
+		display: inline-block;
+		text-align: center;
+		/* overflow: hidden; */
+	}
+
+	.event h3 {
+		padding: 1.1rem 1rem;
+		background-color: #b3643c;
+		color: #f7f7f7;
+		font-size: 0.7rem;
+		font-weight: 600;
+	}
+
+	.location-div {
+		height: 26vh;
+		padding-top: 2rem;
+		margin-bottom: 3rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.location-div h2 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	iframe {
+		width: 290px;
+		height: 170px;
+	}
+}
+
+/* CSS FOR MAX WIDTH OF 392 */
+
+@media (max-width: 392px) {
+	.calendar-intro-div img {
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+	}
+
+	.calendar-intro h2 {
+		font-size: 1.3rem;
+		font-weight: 900;
+		width: 55%;
+		color: #ffffff;
+
+		line-height: 4.3rem;
+
+		position: absolute;
+		bottom: 5%;
+		right: 5%;
+		padding-right: 0;
+	}
+	/* END OF INTRO CALENDAR SECTION */
+
+	/* MAIN CALENDAR SECTION */
+
+	.main-calendar-container {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-top: 1rem;
+	}
+
+	.calendar-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 15vh;
+		margin-bottom: 1rem;
+		gap: 1rem;
+	}
+
+	#calender-btn-1,
+	#calender-btn-2 {
+		padding: 1.4rem 2.5rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 1rem;
+		font-weight: 600;
+		border-radius: 4px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.women-calendar,
+	.men-calendar {
+		margin-bottom: 2.5rem;
+	}
+
+	.women-calendar h2,
+	.men-calendar h2 {
+		font-size: 1rem;
+		font-weight: 800;
+		color: #000000;
+		margin-bottom: 2rem;
+	}
+
+	.event-div {
+		margin-bottom: 2rem;
+		display: grid;
+		grid-template-columns: 0.5fr 1.5fr;
+		justify-content: center;
+		align-items: center;
+		column-gap: 1rem;
+	}
+
+	.time span {
+		padding: 1.1rem 0.8rem;
+		background-color: #000000;
+		color: #f7f7f7;
+		font-size: 0.7rem;
+		font-weight: 600;
+		width: 100px;
+		display: inline-block;
+		text-align: center;
+		/* overflow: hidden; */
+	}
+
+	.event h3 {
+		padding: 1.1rem 1rem;
+		background-color: #b3643c;
+		color: #f7f7f7;
+		font-size: 0.7rem;
+		font-weight: 600;
+	}
+
+	.location-div {
+		height: 26vh;
+		padding-top: 2rem;
+		margin-bottom: 3rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.location-div h2 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	iframe {
+		width: 290px;
+		height: 170px;
+	}
 }

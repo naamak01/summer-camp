@@ -29,6 +29,3 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
 faders.forEach((fader) => {
 	appearOnScroll.observe(fader);
 });
-
-// // Function to scroll to top when arrow is clicked
-// const btnScrollToTop = document.querySelector('#btnScrollToTop');

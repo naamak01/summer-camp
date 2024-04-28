@@ -26,13 +26,14 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="/calendar.css" />
+		<link rel="stylesheet" href="/style.css" />
 		<title>Calendar</title>
 	</head>
 	<body>
 		<!-- HEADER -->
 		<header>
 			<!-- NAVIGATION CONTAINER -->
-			<nav>
+			<nav id="desktop-nav">
 				<a href="/index.html"
 					><img
 						src="/public/STARLETS-LOGO-nb.png"
@@ -48,9 +49,39 @@
 					</ul>
 				</div>
 			</nav>
-			<!-- END OF NAV BAR -->
+			<!-- END OF MAIN NAV BAR -->
 		</header>
 		<!-- END OF HEADER -->
+		<!-- Hamburger Nav -->
+		<nav id="hamburger-nav">
+			<a href="/index.html"
+				><img
+					src="/public/STARLETS-LOGO-nb.png"
+					alt="logo for the summer camp website. Like a roaring"
+			/></a>
+
+			<ul class="nav-menu">
+				<li><a href="./index.html" class="nav-links">HOME</a></li>
+				<li>
+					<a href="/src/Sports/">SPORTS</a>
+				</li>
+				<li>
+					<a href="/src/Directory/">DIRECTORY</a>
+				</li>
+				<li>
+					<a href="/src/Calendar/">CALENDAR</a>
+				</li>
+				<li>
+					<a href="/src/Registration/">REGISTRATION</a>
+				</li>
+			</ul>
+
+			<div class="hamburger-icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
 
 		<!-- MAIN SECTION -->
 
@@ -63,7 +94,7 @@
 					alt="image zoomed in on basketball rim at sunset"
 				/>
 			</div>
-			<h2>CAMP CALENDER</h2>
+			<h2>CAMP CALENDAR</h2>
 		</section>
 		<!-- END OF INTRO SECTION -->
 
@@ -452,5 +483,6 @@
 
 		<script type="module" src="/main.js"></script>
 		<script type="module" src="/calendar.js"></script>
+		<script type="module" src="/hamburger-menu.js"></script>
 	</body>
 </html>

@@ -25,6 +25,40 @@ html {
 	scroll-behavior: smooth;
 }
 
+nav img {
+	width: 120px;
+	height: 100px;
+	margin-left: 8rem;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 8rem;
+}
+
+nav ul li {
+	list-style: none;
+	text-decoration: none;
+	margin-right: 1.3rem;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 600;
+	padding: 0 3px;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+	text-underline-offset: 1.8rem;
+	text-decoration-color: #fff;
+}
+
 /* START OF DIRECTORY CSS */
 
 .coaches-intro {
