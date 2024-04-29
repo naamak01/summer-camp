@@ -30,6 +30,8 @@ const analytics = getAnalytics(app);
 // 	// tokens as needed.
 // 	isTokenAutoRefreshEnabled: true,
 // });
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 // reference database
 const db = getDatabase(app);
