@@ -1,19 +1,19 @@
 // Import the functions you need from the SDKs you need
+// import 'dotenv/config'; // Calling firebase configuration to be run for this app
 import { getAnalytics } from 'firebase/analytics';
 import { initializeApp } from 'firebase/app';
 import { initializeAppCheck, ReCaptchaV3Provider } from 'firebase/app-check';
 import { getDatabase, push, ref, set } from 'firebase/database';
 
-// Calling firebase configuration to be run for this app
 const firebaseConfig = {
-	apiKey: 'AIzaSyCkt-oksZL8XUTj4WVcn46llipq5UCuyLc',
-	authDomain: 'summercamp-form.firebaseapp.com',
-	databaseURL: 'https://summercamp-form-default-rtdb.firebaseio.com',
-	projectId: 'summercamp-form',
-	storageBucket: 'summercamp-form.appspot.com',
-	messagingSenderId: '119407229994',
-	appId: '1:119407229994:web:f2c5935e55a07b67919753',
-	measurementId: 'G-1LRXKLN93D',
+	apiKey: import.meta.env.VITE_API_KEY,
+	authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+	databaseURL: import.meta.env.VITE_DATABASE_URL,
+	projectId: import.meta.env.VITE_PROJECT_ID,
+	storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+	messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+	appId: import.meta.env.VITE_API_ID,
+	measurementId: import.meta.env.VITE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
@@ -23,7 +23,7 @@ const analytics = getAnalytics(app);
 // Pass your reCAPTCHA v3 site key (public key) to activate(). Make sure this
 // key is the counterpart to the secret key you set in the Firebase console.
 const appCheck = initializeAppCheck(app, {
-	provider: new ReCaptchaV3Provider('6LcSbckpAAAAALehGUcQZMqvGELTpqYdJ7vbGtP4'),
+	provider: new ReCaptchaV3Provider(import.meta.env.VITE_RECAPTCHA_KEY),
 
 	// Optional argument. If true, the SDK automatically refreshes App Check
 	// tokens as needed.
@@ -68,17 +68,17 @@ function submitForm(e) {
 	);
 
 	//  Enabling alert message when the submit button is clicked
-	const alertButton = document.querySelector('.alert');
-	alertButton.style.display = 'block';
+	const registerButton = document.querySelector('.alert');
+	registerButton.style.display = 'block';
 
 	// Timer to add the alert Message after 5 seconds
 	setTimeout(() => {
-		alertButton.classList.add('active');
+		registerButton.classList.add('active');
 	}, 100);
 
 	// Remove the alert Message after 5 seconds
 	setTimeout(() => {
-		alertButton.style.display = 'none';
+		registerButton.style.display = 'none';
 	}, 5000);
 
 	// Reset the form

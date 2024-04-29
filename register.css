@@ -260,3 +260,274 @@ input[type='checkbox'] {
 	font-weight: 900;
 	border: none;
 }
+
+/* BEGINNING OF MEDIA QUERIES */
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 990PX */
+
+@media (max-width: 990px) {
+	.register-header h1 {
+		font-size: 3rem;
+	}
+
+	.submit-btn {
+		height: 14vh;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 850PX */
+
+@media (max-width: 850px) {
+	.register-header h1 {
+		font-size: 2.8rem;
+	}
+
+	.submit-btn {
+		height: 14vh;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 780PX */
+
+@media (max-width: 780px) {
+	.register-header h1 {
+		font-size: 2.5rem;
+	}
+
+	.forms-container {
+		width: 80%;
+	}
+
+	.user-info input::placeholder,
+	.email-section input::placeholder,
+	.emergency input::placeholder {
+		font-size: 0.7rem;
+	}
+
+	.submit-btn {
+		height: 14vh;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 694PX */
+
+@media (max-width: 694px) {
+	.register-header h1 {
+		font-size: 2.3rem;
+	}
+
+	.forms-container {
+		width: 80%;
+	}
+
+	.user-info input::placeholder,
+	.email-section input::placeholder,
+	.emergency input::placeholder {
+		font-size: 0.6rem;
+	}
+
+	.preferences h3 {
+		font-size: 1.5rem;
+	}
+
+	.submit-btn {
+		height: 14vh;
+	}
+
+	.submit-btn button {
+		padding: 17px 50px;
+		cursor: pointer;
+		border: 1px solid #000000;
+		background-color: #ffffff;
+		color: #000000;
+		font-size: 1.3rem;
+		font-weight: 600;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 618PX */
+
+@media (max-width: 618px) {
+	.register-header h1 {
+		font-size: 2.1rem;
+	}
+
+	.forms-container {
+		width: 80%;
+	}
+
+	.register-header p {
+		font-size: 0.8rem;
+		font-weight: 700;
+	}
+
+	.user-info input::placeholder,
+	.email-section input::placeholder,
+	.emergency input::placeholder {
+		font-size: 0.6rem;
+	}
+
+	.emergency-2 {
+		font-size: 0.6rem;
+		margin-right: 0;
+	}
+
+	.preferences h3 {
+		font-size: 1.3rem;
+	}
+
+	.submit-btn {
+		height: 14vh;
+	}
+
+	.submit-btn button {
+		padding: 17px 50px;
+		cursor: pointer;
+		border: 1px solid #000000;
+		background-color: #ffffff;
+		color: #000000;
+		font-size: 1.3rem;
+		font-weight: 600;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 558PX */
+
+@media (max-width: 558px) {
+	.registration {
+		margin: 0 auto;
+		width: 90%;
+		margin-left: 0;
+		margin-top: 2rem;
+	}
+
+	.register-header h1 {
+		font-size: 2.1rem;
+	}
+
+	.forms-container {
+		margin: 0 auto;
+		width: 90%;
+		margin-left: 3rem;
+	}
+
+	.register-header p {
+		font-size: 0.73rem;
+		font-weight: 700;
+	}
+
+	.user-info input::placeholder,
+	.email-section input::placeholder,
+	.emergency input::placeholder {
+		font-size: 0.5rem;
+		font-weight: 600;
+	}
+
+	.user-info #firstname {
+		margin-right: 1.4rem;
+	}
+
+	textarea::placeholder {
+		font-size: 0.6rem;
+		padding-left: 6px;
+		font-weight: 600;
+	}
+
+	.preferences h3 {
+		font-size: 1.3rem;
+	}
+
+	.radio-main {
+		gap: 10rem;
+	}
+
+	.submit-btn {
+		height: 14vh;
+	}
+
+	.submit-btn button {
+		padding: 17px 50px;
+		cursor: pointer;
+		border: 1px solid #000000;
+		background-color: #ffffff;
+		color: #000000;
+		font-size: 1.3rem;
+		font-weight: 600;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 538PX */
+
+@media (max-width: 528px) {
+	.registration {
+		margin: 0 auto;
+		width: 90%;
+		margin-left: 0;
+		margin-top: 2rem;
+	}
+
+	.register-header {
+		margin: 0 auto;
+		width: 90%;
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+
+	.register-header h1 {
+		font-size: 2.1rem;
+	}
+
+	.forms-container {
+		margin: 0 auto;
+		width: 90%;
+		margin-left: 3rem;
+	}
+
+	.register-header p {
+		font-size: 0.73rem;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	.user-info #firstname {
+		margin-right: 1rem;
+	}
+
+	.user-info input::placeholder,
+	.email-section input::placeholder,
+	.emergency input::placeholder {
+		font-size: 0.5rem;
+		font-weight: 600;
+	}
+
+	.user-info input {
+		width: 100%;
+		height: 60px;
+		background: #ffffff;
+		color: #000000;
+	}
+
+	textarea::placeholder {
+		font-size: 0.6rem;
+		padding-left: 6px;
+		font-weight: 600;
+	}
+
+	.email-section input,
+	.allergy-section textarea,
+	.emergency input {
+		width: 100%;
+		height: 60px;
+		margin-bottom: 2rem;
+		background: #ffffff;
+		color: #000000;
+	}
+
+	.radio-main {
+		gap: 8rem;
+	}
+
+	.preferences h5 {
+		font-size: 1rem;
+		font-weight: 300;
+	}
+}
