@@ -119,9 +119,9 @@ html {
 
 /* BEGINNING OF MEDIA QUERIES */
 
-/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 1440PX */
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 1480PX */
 
-@media (max-width: 1440px) {
+@media (max-width: 1480px) {
 	/* NAV SECTION */
 
 	.coaches-intro {
