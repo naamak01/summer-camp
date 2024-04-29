@@ -44,7 +44,7 @@ html {
 	font-size: 3.8rem;
 	font-weight: 900;
 	width: 45%;
-	color: #ffffff;
+	color: #d37545;
 
 	line-height: 4.3rem;
 
@@ -221,50 +221,1514 @@ html {
 
 /* END OF IMAGE SLIDER*/
 
-/* CSS FOR MAX WIDTH OF 392 */
+/* BEGINNING OF MEDIA QUERIES */
 
-@media (max-width: 392px) {
-	.sports-intro-div img {
-		object-fit: cover;
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 1560PX */
+@media (max-width: 1560px) {
+	.sport-intro-div img {
 		width: 100%;
-		height: 200px;
-		object-fit: cover;
+		height: 600px;
 	}
 
 	.sports-intro h2 {
-		font-size: 0.8rem;
+		font-size: 4.8rem;
 		font-weight: 900;
-		width: 55%;
-		color: #ffffff;
+		width: 43%;
+		color: #d37545;
 
-		line-height: 1.2rem;
+		line-height: 4.7rem;
 
 		position: absolute;
-		bottom: 5%;
-		right: 5%;
-		padding-right: 0;
-		margin-top: 0;
+		top: 55%;
+		left: 50%;
+	}
+
+	.sports-intro-message {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 70vh;
+		margin-top: 4.5rem;
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
+
+	.sports-intro-message h2 {
+		font-size: 2.8rem;
+		font-weight: 800;
+		word-spacing: -2px;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	.sports-intro-message p {
+		font-size: 1.3rem;
+		font-weight: 400;
+		line-height: 1.5rem;
+		margin-bottom: 1rem;
+		margin-left: 2.5rem;
+		margin-right: 2.5rem;
+	}
+	/* END OF INTRO SECTION AND DIV */
+
+	/* ABOUT OUR SPORTS MESSAGE SECTION*/
+	.soccer-main-div {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: last baseline;
+		margin-bottom: 6rem;
+		margin-top: 3rem;
+		margin-right: 2rem;
+		margin-left: 2rem;
+	}
+
+	.soccer-main-div img {
+		height: 600px;
+		object-fit: cover;
+		padding-left: 1rem;
+		width: 95%;
+	}
+
+	.soccer-main-div h2 {
+		font-size: 5rem;
+		font-weight: 800;
+		margin-left: 1.5rem;
+	}
+
+	.soccer-main-div h3 {
+		font-size: 2rem;
+		font-weight: 800;
+		word-spacing: -4px;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 2rem;
+		margin-top: -30px;
+		margin-left: 4rem;
+	}
+
+	.soccer-main-div h3 ::after {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		border-top: 10px solid #000000; /* Set the color and thickness of the border */
+		bottom: -40px; /* Adjust the position of the border */
+		height: 10px; /* Adjust the thickness of the border */
+		left: 22%;
+		width: 15%; /* Adjust this to control the width of the border */
+	}
+
+	.soccer-inner-div {
+		margin-left: 1.3rem;
+		margin-right: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.soccer-main-div p {
+		font-size: 1.4rem;
+		margin-left: 9rem;
+		margin-top: 1rem;
+		line-height: 2rem;
+		width: 70%;
+	}
+
+	.basketball-main-div {
+		margin-right: 0.8rem;
+		margin-bottom: 2rem;
+	}
+
+	.basketball-text-div {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.basketball-main-div img {
+		margin-right: 1rem;
+	}
+
+	.soccer-inner-div .team-build {
+		margin-left: 9rem;
+	}
+
+	.wellbeing-inner-div h3 {
+		margin-top: 0.1rem;
+		margin-left: 1.2rem;
+	}
+
+	.wellbeing-inner-div p.team-build {
+		margin-left: 4.2em;
+	}
+
+	/* BEGINNING OF IMAGE SLIDER SECTION*/
+
+	.image-carousel {
+		min-height: 55vh;
+		display: grid;
+		place-items: center;
+		margin-bottom: 2rem;
+	}
+
+	.slider {
+		position: relative;
+		margin: auto;
+		width: 94%;
+		height: 400px;
+		display: grid;
+		place-items: center;
+		overflow: hidden;
+	}
+
+	.slider-tracker {
+		display: flex;
+		width: calc(320px * 14);
+		animation: scroll 150s linear infinite;
+	}
+
+	.slider-tracker:hover {
+		animation-play-state: paused;
+	}
+
+	.slide {
+		display: flex;
+		align-items: center;
+		padding: 1.5rem;
+		perspective: 120px;
+	}
+
+	.slide img {
+		border-radius: 5px;
+		width: 320px;
+		height: 400px;
+
+		transition: transform 1s;
+	}
+
+	.slide img:hover {
+		transform: translateZ(15px);
+	}
+
+	@keyframes scroll {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc(-327px * 12));
+		}
 	}
 }
-/* 
-	.coaches-intro img {
-		object-fit: cover;
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 1250PX */
+@media (max-width: 1250px) {
+	.sport-intro-div img {
 		width: 100%;
-		height: 200px;
-		object-fit: cover;
-	} */
+		height: 550px;
+	}
 
-/* .intro h2 {
-		font-size: 0.8rem;
+	.sports-intro h2 {
+		font-size: 4.5rem;
 		font-weight: 900;
-		width: 55%;
-		color: #ffffff;
+		width: 50%;
+		color: #d37545;
 
-		line-height: 1.2rem;
+		line-height: 4.7rem;
 
 		position: absolute;
-		bottom: 5%;
-		right: 5%;
-		padding-right: 0;
-		margin-top: 0;
-	} */
+		top: 60%;
+		left: 35%;
+	}
+
+	.sports-intro-message {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 80vh;
+		margin-top: 4.5rem;
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
+
+	.sports-intro-message h2 {
+		font-size: 2.8rem;
+		font-weight: 800;
+		word-spacing: -2px;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	.sports-intro-message p {
+		font-size: 1.3rem;
+		font-weight: 400;
+		line-height: 1.5rem;
+		margin-bottom: 1rem;
+		margin-left: 2.5rem;
+		margin-right: 2.5rem;
+	}
+	/* END OF INTRO SECTION AND DIV */
+
+	/* ABOUT OUR SPORTS MESSAGE SECTION*/
+	.soccer-main-div {
+		display: flex;
+		flex-direction: column;
+		align-items: last baseline;
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+		margin-right: 0;
+		margin-left: 0;
+		margin: 0 auto;
+		width: 95%;
+	}
+
+	.soccer-main-div img {
+		height: 600px;
+		object-fit: cover;
+		padding-left: 1rem;
+		width: 95%;
+	}
+
+	.soccer-main-div h2 {
+		font-size: 5rem;
+		font-weight: 800;
+		margin-left: 1.5rem;
+	}
+
+	.soccer-main-div h3 {
+		font-size: 2rem;
+		font-weight: 800;
+		word-spacing: -4px;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 2rem;
+		margin-top: -30px;
+		margin-left: 4rem;
+	}
+
+	.soccer-main-div h3 ::after {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		border-top: 10px solid #000000; /* Set the color and thickness of the border */
+		bottom: -40px; /* Adjust the position of the border */
+		height: 10px; /* Adjust the thickness of the border */
+		left: 22%;
+		width: 15%; /* Adjust this to control the width of the border */
+	}
+
+	.position-1 {
+		order: 1;
+	}
+
+	.position-2 {
+		order: 2;
+	}
+
+	.soccer-inner-div {
+		margin-left: 1.3rem;
+		margin-right: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.soccer-main-div p {
+		font-size: 1.4rem;
+		margin-left: 9rem;
+		margin-top: 1rem;
+		line-height: 2rem;
+		width: 70%;
+	}
+
+	.basketball-main-div {
+		margin-right: 0.8rem;
+		margin-bottom: 2rem;
+	}
+
+	.basketball-text-div {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.basketball-main-div img {
+		margin-right: 1rem;
+	}
+
+	.soccer-inner-div .team-build {
+		margin-left: 9rem;
+	}
+
+	.wellbeing-inner-div h3 {
+		margin-top: 0.1rem;
+		margin-left: 1.2rem;
+	}
+
+	.wellbeing-inner-div p.team-build {
+		margin-left: 4.2em;
+	}
+
+	/* BEGINNING OF IMAGE SLIDER SECTION*/
+
+	.image-carousel {
+		min-height: 50vh;
+		display: grid;
+		place-items: center;
+		margin-bottom: 2rem;
+	}
+
+	.slider {
+		position: relative;
+		margin: auto;
+		width: 94%;
+		height: 350px;
+		display: grid;
+		place-items: center;
+		overflow: hidden;
+	}
+
+	.slider-tracker {
+		display: flex;
+		width: calc(280px * 14);
+		animation: scroll 150s linear infinite;
+	}
+
+	.slider-tracker:hover {
+		animation-play-state: paused;
+	}
+
+	.slide {
+		display: flex;
+		align-items: center;
+		padding: 1.5rem;
+		perspective: 120px;
+	}
+
+	.slide img {
+		border-radius: 5px;
+		width: 280px;
+		height: 350px;
+
+		transition: transform 1s;
+	}
+
+	.slide img:hover {
+		transform: translateZ(15px);
+	}
+
+	@keyframes scroll {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc(-287px * 12));
+		}
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 990PX */
+
+@media (max-width: 990px) {
+	.sport-intro-div img {
+		width: 100%;
+		height: 500px;
+	}
+
+	.sports-intro h2 {
+		font-size: 4.2rem;
+		font-weight: 900;
+		width: 70%;
+		color: #d37545;
+
+		line-height: 3.6rem;
+
+		position: absolute;
+		top: 60%;
+		left: 22%;
+	}
+
+	.sports-intro-message {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 85vh;
+		margin-top: 3rem;
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
+
+	.sports-intro-message h2 {
+		font-size: 2.2rem;
+		font-weight: 800;
+		word-spacing: -2px;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	.sports-intro-message p {
+		font-size: 1.1rem;
+		font-weight: 400;
+		line-height: 1.5rem;
+		margin-bottom: 1rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	/* END OF INTRO SECTION AND DIV */
+
+	/* ABOUT OUR SPORTS MESSAGE SECTION*/
+	.soccer-main-div {
+		display: flex;
+		flex-direction: column;
+		align-items: last baseline;
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+		margin-right: 0;
+		margin-left: 0;
+		margin: 0 auto;
+		width: 95%;
+	}
+
+	.soccer-main-div img {
+		height: 500px;
+		object-fit: cover;
+		padding-left: 1rem;
+		width: 95%;
+	}
+
+	.soccer-main-div h2 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin-left: 1.5rem;
+	}
+
+	.soccer-main-div h3 {
+		font-size: 1.5rem;
+		font-weight: 800;
+		word-spacing: -4px;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 2rem;
+		margin-top: -30px;
+		margin-left: 1rem;
+	}
+
+	.soccer-main-div h3 ::after {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		border-top: 10px solid #000000; /* Set the color and thickness of the border */
+		bottom: -40px; /* Adjust the position of the border */
+		height: 10px; /* Adjust the thickness of the border */
+		left: 12%;
+		width: 15%; /* Adjust this to control the width of the border */
+	}
+
+	.position-1 {
+		order: 1;
+	}
+
+	.position-2 {
+		order: 2;
+	}
+
+	.soccer-inner-div {
+		margin-left: 1.3rem;
+		margin-right: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.soccer-main-div p {
+		font-size: 1.2rem;
+		margin-left: 3rem;
+		margin-top: 1rem;
+		line-height: 2rem;
+		width: 80%;
+	}
+
+	.basketball-main-div {
+		margin-right: 0.8rem;
+		margin-bottom: 2rem;
+	}
+
+	.basketball-text-div {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.basketball-main-div img {
+		margin-right: 1rem;
+	}
+
+	.soccer-inner-div .team-build {
+		margin-left: 5rem;
+	}
+
+	.wellbeing-inner-div h3 {
+		margin-top: 0.1rem;
+		margin-left: 1.2rem;
+	}
+
+	.wellbeing-inner-div p.team-build {
+		margin-left: 4.2em;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 850PX */
+
+@media (max-width: 850px) {
+	.sport-intro-div img {
+		width: 100%;
+		height: 450px;
+	}
+
+	.sports-intro h2 {
+		font-size: 3.8rem;
+		font-weight: 900;
+		width: 80%;
+		color: #d37545;
+
+		line-height: 3.6rem;
+
+		position: absolute;
+		top: 58%;
+		left: 22%;
+	}
+
+	.sports-intro-message {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 87vh;
+		margin-top: 3rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
+	.sports-intro-message h2 {
+		font-size: 1.8rem;
+		font-weight: 800;
+		word-spacing: -2px;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	.sports-intro-message p {
+		font-size: 1.1rem;
+		font-weight: 400;
+		line-height: 1.5rem;
+		margin-bottom: 1rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	/* END OF INTRO SECTION AND DIV */
+
+	/* ABOUT OUR SPORTS MESSAGE SECTION*/
+	.soccer-main-div {
+		display: flex;
+		flex-direction: column;
+		align-items: last baseline;
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+		margin-right: 0;
+		margin-left: 0;
+		margin: 0 auto;
+		width: 95%;
+	}
+
+	.soccer-main-div img {
+		height: 450px;
+		object-fit: cover;
+		padding-left: 1rem;
+		width: 95%;
+	}
+
+	.soccer-main-div h2 {
+		font-size: 2.5rem;
+		font-weight: 800;
+		margin-left: 1.5rem;
+	}
+
+	.soccer-main-div h3 {
+		font-size: 1.3rem;
+		font-weight: 800;
+		word-spacing: -4px;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 2rem;
+		margin-top: -30px;
+		margin-left: 1rem;
+	}
+
+	.soccer-main-div h3 ::after {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		border-top: 10px solid #000000; /* Set the color and thickness of the border */
+		bottom: -40px; /* Adjust the position of the border */
+		height: 10px; /* Adjust the thickness of the border */
+		left: 10%;
+		width: 15%; /* Adjust this to control the width of the border */
+	}
+
+	.position-1 {
+		order: 1;
+	}
+
+	.position-2 {
+		order: 2;
+	}
+
+	.soccer-inner-div {
+		margin-left: 1.3rem;
+		margin-right: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.soccer-main-div p {
+		font-size: 1.1rem;
+		margin-left: 3rem;
+		margin-top: 1rem;
+		line-height: 2rem;
+		width: 90%;
+	}
+
+	.basketball-main-div {
+		margin-right: 0.8rem;
+		margin-bottom: 2rem;
+	}
+
+	.basketball-text-div {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.basketball-main-div img {
+		margin-right: 1rem;
+	}
+
+	.soccer-inner-div .team-build {
+		margin-left: 2rem;
+	}
+
+	.wellbeing-inner-div h3 {
+		margin-top: 0.1rem;
+		margin-left: 1.2rem;
+	}
+
+	.wellbeing-inner-div p.team-build {
+		margin-left: 4.2em;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 750PX */
+@media (max-width: 750px) {
+	.sport-intro-div img {
+		width: 100%;
+		height: 350px;
+	}
+
+	.sports-intro h2 {
+		font-size: 3.4rem;
+		font-weight: 900;
+		width: 80%;
+		color: #d37545;
+
+		line-height: 3.2rem;
+
+		position: absolute;
+		top: 54%;
+		left: 15%;
+	}
+
+	.sports-intro-message {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 92vh;
+		margin-top: 3rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
+	.sports-intro-message h2 {
+		font-size: 1.8rem;
+		font-weight: 800;
+		word-spacing: -2px;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	.sports-intro-message p {
+		font-size: 1.1rem;
+		font-weight: 400;
+		line-height: 1.5rem;
+		margin-bottom: 1rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	/* END OF INTRO SECTION AND DIV */
+
+	/* ABOUT OUR SPORTS MESSAGE SECTION*/
+	.soccer-main-div {
+		display: flex;
+		flex-direction: column;
+		align-items: last baseline;
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+		margin-right: 0;
+		margin-left: 0;
+		margin: 0 auto;
+		width: 95%;
+	}
+
+	.soccer-main-div img {
+		height: 350px;
+		object-fit: cover;
+		padding-left: 1rem;
+		width: 95%;
+	}
+
+	.soccer-main-div h2 {
+		font-size: 2.5rem;
+		font-weight: 800;
+		margin-left: 1.5rem;
+	}
+
+	.soccer-main-div h3 {
+		font-size: 1.3rem;
+		font-weight: 800;
+		word-spacing: -4px;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 2rem;
+		margin-top: -30px;
+		margin-left: 1rem;
+	}
+
+	.soccer-main-div h3 ::after {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		border-top: 10px solid #000000; /* Set the color and thickness of the border */
+		bottom: -40px; /* Adjust the position of the border */
+		height: 10px; /* Adjust the thickness of the border */
+		left: 10%;
+		width: 15%; /* Adjust this to control the width of the border */
+	}
+
+	.position-1 {
+		order: 1;
+	}
+
+	.position-2 {
+		order: 2;
+	}
+
+	.soccer-inner-div {
+		margin-left: 1.3rem;
+		margin-right: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.soccer-main-div p {
+		font-size: 1.1rem;
+		margin-left: 3rem;
+		margin-top: 1rem;
+		line-height: 2rem;
+		width: 90%;
+	}
+
+	.basketball-main-div {
+		margin-right: 0.8rem;
+		margin-bottom: 2rem;
+	}
+
+	.basketball-text-div {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.basketball-main-div img {
+		margin-right: 1rem;
+	}
+
+	.soccer-inner-div .team-build {
+		margin-left: 2rem;
+	}
+
+	.wellbeing-inner-div h3 {
+		margin-top: 0.1rem;
+		margin-left: 1.2rem;
+	}
+
+	.wellbeing-inner-div p.team-build {
+		margin-left: 4.2em;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 644px */
+@media (max-width: 660px) {
+	.sport-intro-div img {
+		width: 100%;
+		height: 350px;
+	}
+
+	.sports-intro h2 {
+		font-size: 3rem;
+		font-weight: 900;
+		width: 85%;
+		color: #d37545;
+
+		line-height: 2.8rem;
+
+		position: absolute;
+		top: 54%;
+		left: 15%;
+	}
+
+	.sports-intro-message {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 98vh;
+		margin-top: 3rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
+	.sports-intro-message h2 {
+		font-size: 1.6rem;
+		font-weight: 800;
+		word-spacing: -2px;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	.sports-intro-message p {
+		font-size: 1.1rem;
+		font-weight: 400;
+		line-height: 1.5rem;
+		margin-bottom: 1rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	/* END OF INTRO SECTION AND DIV */
+
+	/* ABOUT OUR SPORTS MESSAGE SECTION*/
+	.soccer-main-div {
+		display: flex;
+		flex-direction: column;
+		align-items: last baseline;
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+		margin-right: 0;
+		margin-left: 0;
+		margin: 0 auto;
+		width: 95%;
+	}
+
+	.soccer-main-div img {
+		height: 350px;
+		object-fit: cover;
+		padding-left: 0;
+		width: 100%;
+	}
+
+	.soccer-main-div h2 {
+		font-size: 2.2rem;
+		font-weight: 800;
+	}
+
+	.soccer-main-div h3 {
+		font-size: 1.3rem;
+		font-weight: 800;
+		word-spacing: -4px;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 2rem;
+		margin-top: -30px;
+	}
+
+	.soccer-main-div h3 ::after {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		border-top: 10px solid #000000; /* Set the color and thickness of the border */
+		bottom: -40px; /* Adjust the position of the border */
+		height: 10px; /* Adjust the thickness of the border */
+		left: 10%;
+		width: 15%; /* Adjust this to control the width of the border */
+	}
+
+	.position-1 {
+		order: 1;
+	}
+
+	.position-2 {
+		order: 2;
+	}
+
+	.soccer-inner-div {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.soccer-main-div p {
+		font-size: 1.1rem;
+		margin-left: 3rem;
+		margin-top: 1rem;
+		line-height: 2rem;
+	}
+
+	.basketball-main-div {
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+
+	.basketball-text-div {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.basketball-main-div img {
+		margin-right: 1rem;
+	}
+
+	.soccer-inner-div .team-build {
+		margin-left: 1rem;
+	}
+
+	.wellbeing-inner-div h3 {
+		margin-top: 0.1rem;
+		margin-left: 1.2rem;
+	}
+
+	.wellbeing-inner-div p.team-build {
+		margin-left: 3.4em;
+	}
+}
+
+/* MEDIA QUERY FIR SCREEN WIDTH OF 560PX */
+@media (max-width: 560px) {
+	.sport-intro-div img {
+		width: 100%;
+		height: 290px;
+	}
+
+	.sports-intro h2 {
+		font-size: 2.8rem;
+		font-weight: 900;
+		width: 80%;
+		color: #d37545;
+
+		line-height: 2.5rem;
+
+		position: absolute;
+		top: 50%;
+		left: 12%;
+	}
+
+	.sports-intro-message {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 105vh;
+		margin-top: 3rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
+	.sports-intro-message h2 {
+		font-size: 1.4rem;
+		font-weight: 800;
+		word-spacing: -2px;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	.sports-intro-message p {
+		font-size: 1.1rem;
+		font-weight: 400;
+		line-height: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	/* END OF INTRO SECTION AND DIV */
+
+	/* ABOUT OUR SPORTS MESSAGE SECTION*/
+	.soccer-main-div {
+		display: flex;
+		flex-direction: column;
+		align-items: last baseline;
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+		margin-right: 0;
+		margin-left: 0;
+		margin: 0 auto;
+		width: 95%;
+	}
+
+	.soccer-main-div img {
+		height: 300px;
+		object-fit: cover;
+		padding-left: 0;
+		width: 100%;
+	}
+
+	.soccer-main-div h2 {
+		font-size: 2.2rem;
+		font-weight: 800;
+	}
+
+	.soccer-main-div h3 {
+		font-size: 1.3rem;
+		font-weight: 800;
+		word-spacing: -4px;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 2rem;
+		margin-top: -30px;
+	}
+
+	.soccer-main-div h3 ::after {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		border-top: 10px solid #000000; /* Set the color and thickness of the border */
+		bottom: -40px; /* Adjust the position of the border */
+		height: 10px; /* Adjust the thickness of the border */
+		left: 10%;
+		width: 15%; /* Adjust this to control the width of the border */
+	}
+
+	.position-1 {
+		order: 1;
+	}
+
+	.position-2 {
+		order: 2;
+	}
+
+	.soccer-inner-div {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.soccer-main-div p {
+		font-size: 1.1rem;
+		margin-left: 3rem;
+		margin-top: 1rem;
+		line-height: 2rem;
+	}
+
+	.basketball-main-div {
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+
+	.basketball-text-div {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.basketball-main-div img {
+		margin-right: 0.6rem;
+	}
+
+	.soccer-inner-div .team-build {
+		margin-left: 1rem;
+	}
+
+	.wellbeing-inner-div h3 {
+		margin-top: 0.1rem;
+		margin-left: 1.2rem;
+	}
+
+	.wellbeing-inner-div p.team-build {
+		margin-left: 3.4em;
+	}
+
+	/* BEGINNING OF IMAGE SLIDER SECTION*/
+}
+
+/* CSS FOR MAX WIDTH OF 465px  */
+@media (max-width: 465px) {
+	.sport-intro-div img {
+		width: 100%;
+		height: 270px;
+	}
+
+	.sports-intro h2 {
+		font-size: 2.6rem;
+		font-weight: 900;
+		width: 80%;
+		color: #d37545;
+
+		line-height: 2.5rem;
+
+		position: absolute;
+		top: 50%;
+		left: 12%;
+	}
+
+	.sports-intro-message {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 120vh;
+		margin-top: 3rem;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+	}
+
+	.sports-intro-message h2 {
+		font-size: 1.4rem;
+		font-weight: 800;
+		word-spacing: -2px;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	.sports-intro-message p {
+		font-size: 1.1rem;
+		font-weight: 400;
+		line-height: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	/* END OF INTRO SECTION AND DIV */
+
+	/* ABOUT OUR SPORTS MESSAGE SECTION*/
+	.soccer-main-div {
+		display: flex;
+		flex-direction: column;
+		align-items: last baseline;
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+		margin-right: 0;
+		margin-left: 0;
+		margin: 0 auto;
+		width: 95%;
+	}
+
+	.soccer-main-div img {
+		width: 250px;
+		height: 240px;
+		object-fit: cover;
+		padding-left: 0;
+		width: 100%;
+	}
+
+	.soccer-main-div h2 {
+		font-size: 2.2rem;
+		font-weight: 800;
+	}
+
+	.soccer-main-div h3 {
+		font-size: 1.3rem;
+		font-weight: 800;
+		word-spacing: -4px;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 2rem;
+		margin-top: -30px;
+	}
+
+	.soccer-main-div h3 ::after {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		border-top: 10px solid #000000; /* Set the color and thickness of the border */
+		bottom: -40px; /* Adjust the position of the border */
+		height: 10px; /* Adjust the thickness of the border */
+		left: 10%;
+		width: 15%; /* Adjust this to control the width of the border */
+	}
+
+	.position-1 {
+		order: 1;
+	}
+
+	.position-2 {
+		order: 2;
+	}
+
+	.soccer-inner-div {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.soccer-main-div p {
+		font-size: 1.1rem;
+		margin-left: 3rem;
+		margin-top: 1rem;
+		line-height: 2rem;
+	}
+
+	.basketball-main-div {
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+
+	.basketball-text-div {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.basketball-main-div img {
+		margin-right: 0.6rem;
+	}
+
+	.soccer-inner-div .team-build {
+		margin-left: 1rem;
+	}
+
+	.wellbeing-inner-div h3 {
+		margin-top: 0.1rem;
+	}
+
+	/* BEGINNING OF IMAGE SLIDER SECTION*/
+
+	.image-carousel {
+		min-height: 45vh;
+		display: grid;
+		place-items: center;
+		margin-bottom: 2rem;
+	}
+
+	.slider {
+		position: relative;
+		margin: auto;
+		width: 94%;
+		height: 300px;
+		display: grid;
+		place-items: center;
+		overflow: hidden;
+	}
+
+	.slider-tracker {
+		display: flex;
+		width: calc(250px * 14);
+		animation: scroll 150s linear infinite;
+	}
+
+	.slider-tracker:hover {
+		animation-play-state: paused;
+	}
+
+	.slide {
+		display: flex;
+		align-items: center;
+		padding: 1.5rem;
+		perspective: 120px;
+	}
+
+	.slide img {
+		border-radius: 5px;
+		width: 250px;
+		height: 300px;
+
+		transition: transform 1s;
+	}
+
+	.slide img:hover {
+		transform: translateZ(15px);
+	}
+
+	@keyframes scroll {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc(-257px * 12));
+		}
+	}
+}
+
+/* CSS FOR MAX WIDTH OF 392 */
+
+@media (max-width: 392px) {
+	.sport-intro-div img {
+		width: 100%;
+		height: 250px;
+	}
+
+	.sports-intro h2 {
+		font-size: 2.2rem;
+		font-weight: 900;
+		width: 80%;
+		color: #d37545;
+
+		line-height: 2rem;
+
+		position: absolute;
+		top: 50%;
+		left: 10%;
+	}
+
+	.sports-intro-message {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 125vh;
+		margin-top: 3rem;
+		margin-left: 1.3rem;
+		margin-right: 1.3rem;
+	}
+
+	.sports-intro-message h2 {
+		font-size: 1.2rem;
+		font-weight: 800;
+		word-spacing: -2px;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	.sports-intro-message p {
+		font-size: 1.1rem;
+		font-weight: 400;
+		line-height: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	/* END OF INTRO SECTION AND DIV */
+
+	/* ABOUT OUR SPORTS MESSAGE SECTION*/
+	.soccer-main-div {
+		display: flex;
+		flex-direction: column;
+		align-items: last baseline;
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+		margin-right: 0;
+		margin-left: 0;
+		margin: 0 auto;
+		width: 95%;
+	}
+
+	.soccer-main-div img {
+		width: 250px;
+		height: 240px;
+		object-fit: cover;
+		padding-left: 0;
+		width: 100%;
+	}
+
+	.soccer-main-div h2 {
+		font-size: 2.2rem;
+		font-weight: 800;
+	}
+
+	.soccer-main-div h3 {
+		font-size: 1.3rem;
+		font-weight: 800;
+		word-spacing: -4px;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 2rem;
+		margin-top: -30px;
+	}
+
+	.soccer-main-div h3 ::after {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		border-top: 10px solid #000000; /* Set the color and thickness of the border */
+		bottom: -40px; /* Adjust the position of the border */
+		height: 10px; /* Adjust the thickness of the border */
+		left: 10%;
+		width: 15%; /* Adjust this to control the width of the border */
+	}
+
+	.position-1 {
+		order: 1;
+	}
+
+	.position-2 {
+		order: 2;
+	}
+
+	.soccer-inner-div {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.soccer-main-div p {
+		font-size: 1.1rem;
+		margin-left: 3rem;
+		margin-top: 1rem;
+		line-height: 2rem;
+	}
+
+	.basketball-main-div {
+		margin-right: 0;
+	}
+
+	.basketball-text-div {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.basketball-main-div img {
+		margin-right: 0.6rem;
+	}
+
+	.soccer-inner-div .team-build {
+		margin-left: 1rem;
+	}
+
+	.wellbeing-inner-div h3 {
+		margin-top: 0.1rem;
+	}
+
+	/* BEGINNING OF IMAGE SLIDER SECTION*/
+
+	.image-carousel {
+		min-height: 45vh;
+		display: grid;
+		place-items: center;
+		margin-bottom: 2rem;
+	}
+
+	.slider {
+		position: relative;
+		margin: auto;
+		width: 94%;
+		height: 300px;
+		display: grid;
+		place-items: center;
+		overflow: hidden;
+	}
+
+	.slider-tracker {
+		display: flex;
+		width: calc(250px * 14);
+		animation: scroll 150s linear infinite;
+	}
+
+	.slider-tracker:hover {
+		animation-play-state: paused;
+	}
+
+	.slide {
+		display: flex;
+		align-items: center;
+		padding: 1.5rem;
+		perspective: 120px;
+	}
+
+	.slide img {
+		border-radius: 5px;
+		width: 250px;
+		height: 300px;
+
+		transition: transform 1s;
+	}
+
+	.slide img:hover {
+		transform: translateZ(15px);
+	}
+
+	@keyframes scroll {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc(-257px * 12));
+		}
+	}
+}
