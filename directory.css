@@ -125,7 +125,8 @@ html {
 	/* NAV SECTION */
 
 	.coaches-intro {
-		height: 90vh;
+		height: 100vh;
+		margin-bottom: 4rem;
 	}
 
 	.coaches-intro-div img {
@@ -144,8 +145,8 @@ html {
 		line-height: 3rem;
 
 		position: absolute;
-		top: 48%;
-		right: 50px;
+		top: 55%;
+		right: 10px;
 		margin-bottom: 0;
 	}
 
