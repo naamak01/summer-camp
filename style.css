@@ -512,9 +512,9 @@ footer {
 
 /* BEGINNING OF MEDIA QUERIES */
 
-/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 1409PX */
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 1440PX */
 
-@media (max-width: 1409px) {
+@media (max-width: 1440px) {
 	/* NAV SECTION */
 
 	#hamburger-nav {
@@ -680,7 +680,7 @@ footer {
 	/* FOOTER SECTION CSS */
 
 	footer {
-		height: 40vh;
+		height: 53vh;
 		background-color: #000000;
 		padding-top: 2rem;
 	}
@@ -898,7 +898,7 @@ footer {
 	/* FOOTER SECTION CSS */
 
 	footer {
-		height: 40vh;
+		height: 50vh;
 		background-color: #000000;
 		padding-top: 2rem;
 	}
@@ -1116,7 +1116,7 @@ footer {
 	/* FOOTER SECTION CSS */
 
 	footer {
-		height: 40vh;
+		height: 50vh;
 		background-color: #000000;
 		padding-top: 2rem;
 	}
@@ -1334,7 +1334,7 @@ footer {
 	/* FOOTER SECTION CSS */
 
 	footer {
-		height: 40vh;
+		height: 50vh;
 		background-color: #000000;
 		padding-top: 2rem;
 	}
@@ -1549,7 +1549,7 @@ footer {
 	/* FOOTER SECTION CSS */
 
 	footer {
-		height: 43vh;
+		height: 50vh;
 		background-color: #000000;
 		padding-top: 2rem;
 	}
@@ -1772,7 +1772,7 @@ footer {
 	/* FOOTER SECTION CSS */
 
 	footer {
-		height: 40vh;
+		height: 45vh;
 		background-color: #000000;
 		padding-top: 2rem;
 	}

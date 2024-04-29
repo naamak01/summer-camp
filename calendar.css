@@ -225,9 +225,9 @@ iframe {
 
 /* MEDIA QUERIES BEGIN */
 
-/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 1409PX */
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 1440PX */
 
-@media (max-width: 1409px) {
+@media (max-width: 1440px) {
 	.calendar-intro-div img {
 		width: 100%;
 		height: 450px;
