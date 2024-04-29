@@ -288,7 +288,7 @@ input[type='checkbox'] {
 	.user-info input::placeholder,
 	.email-section input::placeholder,
 	.emergency input::placeholder {
-		font-size: 0.6rem;
+		font-size: 0.8rem;
 	}
 
 	.preferences h3 {
@@ -329,11 +329,11 @@ input[type='checkbox'] {
 	.user-info input::placeholder,
 	.email-section input::placeholder,
 	.emergency input::placeholder {
-		font-size: 0.6rem;
+		font-size: 0.8rem;
 	}
 
 	.emergency-2 {
-		font-size: 0.6rem;
+		font-size: 0.8rem;
 		margin-right: 0;
 	}
 
@@ -373,18 +373,20 @@ input[type='checkbox'] {
 	.forms-container {
 		margin: 0 auto;
 		width: 90%;
-		margin-left: 3rem;
+		margin-left: 2.5rem;
 	}
 
 	.register-header p {
 		font-size: 0.73rem;
 		font-weight: 700;
+		margin-bottom: 1rem;
+		margin-top: 1rem;
 	}
 
 	.user-info input::placeholder,
 	.email-section input::placeholder,
 	.emergency input::placeholder {
-		font-size: 0.5rem;
+		font-size: 0.8rem;
 		font-weight: 600;
 	}
 
@@ -396,6 +398,14 @@ input[type='checkbox'] {
 		font-size: 0.6rem;
 		padding-left: 6px;
 		font-weight: 600;
+	}
+
+	.user-info input[type='text'],
+	.email-section input[type='email'],
+	.emergency input[type='text'],
+	.input-group textarea,
+	.emergency input[type='tel'] {
+		border: 2px solid #000000;
 	}
 
 	.preferences h3 {
@@ -452,6 +462,8 @@ input[type='checkbox'] {
 		font-size: 0.73rem;
 		font-weight: 600;
 		text-align: center;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 	}
 
 	.user-info #firstname {
@@ -476,6 +488,188 @@ input[type='checkbox'] {
 		font-size: 0.6rem;
 		padding-left: 6px;
 		font-weight: 600;
+	}
+
+	.user-info input[type='text'],
+	.email-section input[type='email'],
+	.emergency input[type='text'],
+	.input-group textarea,
+	.emergency input[type='tel'] {
+		border: 2px solid #000000;
+	}
+
+	.email-section input,
+	.allergy-section textarea,
+	.emergency input {
+		width: 100%;
+		height: 60px;
+		margin-bottom: 2rem;
+		background: #ffffff;
+		color: #000000;
+	}
+
+	.radio-main {
+		gap: 8rem;
+	}
+
+	.preferences h5 {
+		font-size: 1rem;
+		font-weight: 300;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 465PX */
+
+@media (max-width: 465px) {
+	.registration {
+		margin: 0 auto;
+		width: 90%;
+		margin-left: 0;
+		margin-top: 2rem;
+	}
+
+	.register-header {
+		margin: 0 auto;
+		width: 90%;
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+
+	.register-header h1 {
+		font-size: 2.1rem;
+	}
+
+	.forms-container {
+		margin: 0 auto;
+		width: 90%;
+		margin-left: 3rem;
+	}
+
+	.register-header p {
+		font-size: 0.73rem;
+		font-weight: 600;
+		text-align: center;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.user-info #firstname {
+		margin-right: 1rem;
+	}
+
+	.user-info input::placeholder,
+	.email-section input::placeholder,
+	.emergency input::placeholder {
+		font-size: 0.5rem;
+		font-weight: 600;
+	}
+
+	.user-info input {
+		width: 100%;
+		height: 60px;
+		background: #ffffff;
+		color: #000000;
+	}
+
+	textarea::placeholder {
+		font-size: 0.6rem;
+		padding-left: 6px;
+		font-weight: 600;
+	}
+
+	.user-info input[type='text'],
+	.email-section input[type='email'],
+	.emergency input[type='text'],
+	.input-group textarea,
+	.emergency input[type='tel'] {
+		border: 2px solid #000000;
+	}
+
+	.email-section input,
+	.allergy-section textarea,
+	.emergency input {
+		width: 100%;
+		height: 60px;
+		margin-bottom: 2rem;
+		background: #ffffff;
+		color: #000000;
+	}
+
+	.radio-main {
+		gap: 8rem;
+	}
+
+	.preferences h5 {
+		font-size: 1rem;
+		font-weight: 300;
+	}
+}
+
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 392PX */
+
+@media (max-width: 392px) {
+	.registration {
+		margin: 0 auto;
+		width: 90%;
+		margin-left: 0;
+		margin-top: 2rem;
+	}
+
+	.register-header {
+		margin: 0 auto;
+		width: 90%;
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+
+	.register-header h1 {
+		font-size: 2.1rem;
+	}
+
+	.forms-container {
+		margin: 0 auto;
+		width: 90%;
+		margin-left: 2.2rem;
+	}
+
+	.register-header p {
+		font-size: 0.73rem;
+		font-weight: 600;
+		text-align: center;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.user-info #firstname {
+		margin-right: 1rem;
+	}
+
+	.user-info input::placeholder,
+	.email-section input::placeholder,
+	.emergency input::placeholder {
+		font-size: 0.5rem;
+		font-weight: 600;
+	}
+
+	.user-info input {
+		width: 100%;
+		height: 60px;
+		background: #ffffff;
+		color: #000000;
+	}
+
+	textarea::placeholder {
+		font-size: 0.6rem;
+		padding-left: 6px;
+		font-weight: 600;
+	}
+
+	.user-info input[type='text'],
+	.email-section input[type='email'],
+	.emergency input[type='text'],
+	.input-group textarea,
+	.emergency input[type='tel'] {
+		border: 2px solid #000000;
 	}
 
 	.email-section input,
