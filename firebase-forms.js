@@ -31,7 +31,6 @@ const analytics = getAnalytics(app);
 // 	isTokenAutoRefreshEnabled: true,
 // });
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
 
 // reference database
 const db = getDatabase(app);
