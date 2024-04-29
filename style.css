@@ -512,9 +512,9 @@ footer {
 
 /* BEGINNING OF MEDIA QUERIES */
 
-/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 1480PX */
+/* MEDIA QUERY TARGETING SCREEN WIDTH BETWEEN 1560PX */
 
-@media (max-width: 1480px) {
+@media (max-width: 1560px) {
 	/* NAV SECTION */
 
 	#hamburger-nav {
