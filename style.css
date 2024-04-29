@@ -538,7 +538,7 @@ footer {
 	.intro-div img {
 		object-fit: cover;
 		width: 100%;
-		height: 580px;
+		height: 600px;
 		object-fit: cover;
 	}
 
@@ -595,7 +595,7 @@ footer {
 
 	.about-div3 {
 		padding: 2.6rem 2.6rem;
-		height: 115vh;
+		height: 120vh;
 	}
 
 	.div3-inner-div {
@@ -671,7 +671,7 @@ footer {
 
 		width: 70%;
 		margin: 0 auto;
-		min-height: 75vh;
+		min-height: 80vh;
 		margin-bottom: 4rem;
 	}
 
@@ -680,7 +680,7 @@ footer {
 	/* FOOTER SECTION CSS */
 
 	footer {
-		height: 65vh;
+		height: 55vh;
 		background-color: #000000;
 		padding-top: 2rem;
 	}
@@ -898,7 +898,7 @@ footer {
 	/* FOOTER SECTION CSS */
 
 	footer {
-		height: 65vh;
+		height: 55vh;
 		background-color: #000000;
 		padding-top: 2rem;
 	}
@@ -1116,7 +1116,7 @@ footer {
 	/* FOOTER SECTION CSS */
 
 	footer {
-		height: 65vh;
+		height: 55vh;
 		background-color: #000000;
 		padding-top: 2rem;
 	}
@@ -1334,7 +1334,7 @@ footer {
 	/* FOOTER SECTION CSS */
 
 	footer {
-		height: 65vh;
+		height: 55vh;
 		background-color: #000000;
 		padding-top: 2rem;
 	}
@@ -1549,7 +1549,7 @@ footer {
 	/* FOOTER SECTION CSS */
 
 	footer {
-		height: 65vh;
+		height: 55vh;
 		background-color: #000000;
 		padding-top: 2rem;
 	}
@@ -1772,7 +1772,7 @@ footer {
 	/* FOOTER SECTION CSS */
 
 	footer {
-		height: 65vh;
+		height: 55vh;
 		background-color: #000000;
 		padding-top: 2rem;
 	}
