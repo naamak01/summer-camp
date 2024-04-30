@@ -144,14 +144,14 @@ textarea::placeholder {
 	padding-left: 2rem;
 }
 
-.user-info input[type='text']:focus,
+/* .user-info input[type='text']:focus,
 .email-section input[type='email']:focus,
 .emergency input[type='text']:focus,
 .input-group textarea:focus,
 .emergency input[type='tel']:focus {
 	color: #000000;
 	padding-left: 1rem;
-}
+} */
 
 .preferences {
 	margin-bottom: 2rem;
