@@ -141,7 +141,7 @@ textarea::placeholder {
 .input-group textarea,
 .emergency input[type='tel'] {
 	color: #000000;
-	padding-left: 2rem;
+	/* padding-left: 2rem; */
 }
 
 .user-info input[type='text']:focus,
@@ -150,7 +150,7 @@ textarea::placeholder {
 .input-group textarea:focus,
 .emergency input[type='tel']:focus {
 	color: #000000;
-	/* padding-left: 1rem; */
+	padding-left: 1rem;
 }
 
 .preferences {
