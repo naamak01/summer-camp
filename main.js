@@ -29,3 +29,6 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
 faders.forEach((fader) => {
 	appearOnScroll.observe(fader);
 });
+
+// Code to format phone number input correctly
+// Auto fills the bracket and dashes for the user
