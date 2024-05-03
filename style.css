@@ -2055,7 +2055,7 @@ footer {
 
 /* CSS FOR MAX WIDTH OF 465px */
 
-@media (max-width: 465px) {
+@media (max-width: 475px) {
 	/* NAV SECTION */
 	#desktop-nav {
 		display: none;
@@ -2205,7 +2205,7 @@ footer {
 
 		width: 70%;
 		margin: 0 auto;
-		min-height: 86vh;
+		min-height: 89vh;
 		margin-bottom: 4rem;
 	}
 
@@ -2276,7 +2276,7 @@ footer {
 
 /* CSS FOR MAX WIDTH OF 392 */
 
-@media (max-width: 392px) {
+@media (max-width: 410px) {
 	/* NAV SECTION */
 	#desktop-nav {
 		display: none;
@@ -2427,7 +2427,7 @@ footer {
 
 		width: 70%;
 		margin: 0 auto;
-		min-height: 86vh;
+		min-height: 87vh;
 		margin-bottom: 4rem;
 	}
 
