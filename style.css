@@ -2055,7 +2055,7 @@ footer {
 
 /* CSS FOR MAX WIDTH OF 465px */
 
-@media (max-width: 475px) {
+@media (max-width: 501px) {
 	/* NAV SECTION */
 	#desktop-nav {
 		display: none;
@@ -2144,7 +2144,7 @@ footer {
 
 	.about-div3 {
 		padding: 2rem 0.7rem;
-		height: 167vh;
+		height: 175vh;
 	}
 
 	.div3-inner-div {
@@ -2205,7 +2205,7 @@ footer {
 
 		width: 70%;
 		margin: 0 auto;
-		min-height: 89vh;
+		min-height: 87vh;
 		margin-bottom: 4rem;
 	}
 
